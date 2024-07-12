@@ -1,0 +1,622 @@
+@charset "utf-8";
+/* Create with Gulp + SCSS on windows */
+/* ... Pu Yi Yuan 法雨山普宜苑官方網站 ... */
+@import '_mixins.scss';
+@import '_extends.scss';
+@import '_class_defaults.scss';
+$basicDepth:1;
+$goldColor:#b4854c;
+#pingForRwd{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: -1000px;
+	left: -1000px;
+}
+#pingForRwd p{
+	float: left;
+}
+/* 全站背景音樂播放開關 begin */
+.BGplayer{
+	&.show{
+		top: 0;
+	}
+	position: fixed;
+	top: calc(-1.8rem - 4px);
+	left: 0;
+	width: calc(100% - 4px);
+	height: 1.8rem;
+	z-index: 9;
+	audio{
+		position: absolute;
+		top: -10000px;
+		left: -10000px;
+	}
+	button{
+		&:active{
+			span{
+				padding-top: 1px;
+				padding-left: 1px;
+			}
+		}
+		@extend %clearBgAndBorder;
+		float: left;
+		height: 100%;
+		span{
+			display: inline-block;
+		}
+	}
+	button.closeHintBg{
+		padding: 0;
+		width: 3rem;
+	}
+	button.playBg{
+		padding: 0 0.35rem;
+		width: calc(100% - 3rem);
+		.text{
+			float: left;
+		}
+		.author{
+			float: right;
+		}
+	}
+}
+/* 全站背景音樂播放開關 end */
+.main{
+	
+
+	/* 網頁限制寬度並置中的容器 begin */
+	> div.wrapper{
+		@extend %alignCenter;
+		width: 1000px;
+	}
+	/* 網頁限制寬度並置中的容器 end */
+
+	/* 表頭,選單,大標 begin */
+	.pageTop{
+		position: relative;
+		header,
+		.siteMenu{
+			position: absolute;
+			left: 0;
+			width: 100%;
+			z-index: $basicDepth;
+		}
+		header{
+			top: 0;
+			
+			height: 100%;
+			.siteLogo{
+				display: inline-block;
+				margin-top: 42px;
+				margin-left: 57px;
+			}
+		}
+		.siteMenu{
+
+			bottom: -48px;
+			height: 52px;
+			
+			ul{
+				display: block;
+				padding-top: 5px;
+				li{
+					display: inline-block;
+					padding: 0px 1.5rem;
+				}
+			}
+			.FBpage{
+				position: absolute;
+				bottom: -6px;
+				right: 23px;
+				width: 65px;
+				height: 65px;
+				z-index: $basicDepth;
+			}
+			.menuIOBtn.openMenu{
+				display: none;
+			
+			}
+		}
+		.banner{
+			width: 100%;
+			height: auto;
+		}
+		
+	}
+	/* 表頭,選單,大標 end */
+
+	/* 網站內容段落 begin */
+	section.pageCtx{
+		margin-top: 25px;
+		margin-bottom: 50px;
+		padding-left: 100px;
+		padding-right: 60px;
+		aside.sideOptions{
+			float: left;
+			width: 140px;
+			h3{}
+			.contentMenu{}
+			.puppet{}
+		}
+		dl.contentBlock{
+			float: right;
+			width: 600px;
+			dt.title{
+
+			}
+			dd{}
+		}
+	}
+	/* 網站內容段落 end */
+
+	/* 網站主選單 begin */
+	nav.siteMenu{
+		ul{}
+		li{
+			&:last-child{
+				
+			}
+			
+			a{
+				&:hover{
+					&:before{
+						position: absolute;
+						right: 0;
+						bottom: -6px;
+						width: 100%;
+						height: 6px;
+						z-index: $basicDepth;
+						content: ' ';
+						
+					}
+				}
+				@include fontSize("18pt");
+				display: inline-block;
+				position: relative;
+				font-weight: bold;
+				
+			}
+		}
+		.FBpage{
+			
+		}
+		.menuIOBtn{
+			i.icon-cross{
+				
+			}
+		}
+		.menuCover{
+			display: none;
+
+		}
+	}
+	/* 網站主選單 end */
+
+	/* 網站麵包屑 begin */
+	nav.breadCrumb{
+		margin: 65px 25px;
+		margin-bottom: 0;
+		ul{
+			display: block;
+			li:last-child{
+				&:after{
+					display: none;
+				}
+			}
+			li{
+				&:after{
+					content: '/';
+					margin-left: 5px;
+				}
+				@extend %textOverflow;
+				display: inline-block;
+				max-width: 25rem;
+				a,
+				span{
+					@include fontSize("14pt");
+					
+				}
+				a{
+					&:hover{
+						
+					}
+				}
+			}
+		}
+	}
+	/* 網站麵包屑 end */
+
+	
+
+	/* 網頁內容左側欄 begin */
+	aside.sideOptions{
+		position: relative;
+		.cap{
+			height: 38px;
+			
+		}
+		h3{
+			font-size: 1em;
+			span{
+				@include fontSize("18pt");
+				display: block;
+				margin: 0 15%;
+				padding-bottom: 6px;
+				
+			}
+		}
+		/* 單元項目選單 begin */
+		.contentMenu{
+
+			
+			ul{
+				margin-top: 25px;
+				padding-bottom: 190px;
+			}
+			li{
+				margin-bottom: 10px;
+				padding: 0 5px;
+				
+				a,
+				span.current{
+					@include fontSize("16pt");
+					line-height: 1.5;
+					
+				}
+				a{
+					&:hover{
+						
+					}
+					
+				}
+				span.current{
+					
+				}
+			}
+		}
+		/* 單元項目選單 end */
+		.puppet{
+			position: absolute;
+			bottom: -98px;
+			left: -63px;
+			width: 203px;
+			height: 264px;
+			z-index: $basicDepth;
+			
+		}
+	}
+	/* 網頁內容左側欄 end */
+	
+	/* 網頁內容右側欄 begin */
+	dl.contentBlock{
+		dt.title{
+			position: relative;
+			margin-bottom: 10px;
+			line-height: 1.25;
+			span{
+				@include fontSize("20pt");
+				display: inline-block;
+				
+			}
+			span.page{
+				display: inline;
+			}
+			.ink{
+				position: absolute;
+				top: -2px;
+				left: -30px;
+				width: 20px;
+				height: 20px;
+				z-index: $basicDepth;
+				
+			}
+			.mobileSideOption{
+				display: none;
+				
+				ul{
+					@include roundBorder(5px);
+					@include glowOut(3px , 1px , rgba(0,0,0,0.35));
+					
+				}
+				.menuIOBtn{
+					&:active{
+						@include glowOut(7px , 4px , rgba(0,104,183,0.35));
+					}
+					
+				}
+			}
+		}
+		dd{
+			.posterWrapper,
+			.subsetList,
+			.thumbSubsetList,
+			.ckx{
+				margin-bottom: 25px;
+			}
+			hr.withShadow{
+				margin: 40px 0;
+			}
+
+		}
+		
+	}
+	/* 網頁內容右側欄 end */
+
+	/* 網頁內容元件 begin */
+	section{
+		h4.dateTime{
+			margin-bottom: 5px;
+			font-size: 1em;
+			time{
+				@include fontSize("20pt");
+			}
+		}
+		h2.contentTitle{
+			@include fontSize("22pt");
+			margin-bottom: 15px;
+			line-height: 1.5;
+		}
+		div.backPrev{
+			@include fontSize("18pt");
+			a{}
+		}
+		.ckx{
+			*{
+				margin-bottom: 10px;
+				line-height: 1.25;
+			}
+			p{
+				@include fontSize("18pt");
+				margin-bottom: 30px;
+				line-height: 1.8;
+			}
+			img{
+				margin: 3px;
+				max-width: 100%;
+				width: auto;
+				height: auto;
+			}
+			a{
+				padding: 0 2px;
+			}
+		}
+		/* 最新消息的年度消息圖框 begin */
+		.posterWrapper{
+			figure{
+				margin: 0;
+				padding: 0;
+			}
+			.frameTop,
+			.frameMiddle,
+			.frameBottom{
+				img{
+					display: block;
+					width: 100%;
+					height: auto;
+				}
+			}
+			
+			.frameMiddle{
+				padding-left: 18px;
+				padding-right: 18px;
+				
+			}
+			
+		}
+		/* 最新消息的年度消息圖框 end */
+
+		/* 年度消息分項清單 begin */
+		.subsetList{
+			h3{
+				margin-bottom: 5px;
+				@include fontSize("24pt");
+				line-height: 1.5;
+			}
+			ol{
+				list-style: none;
+				li{
+					&:last-child{
+						
+					}
+					
+					a,
+					span.current{
+						display: inline-block;
+						padding: 15px;
+						padding-left: 0;
+						@include fontSize("18pt");
+						line-height: 1.5;
+						time{
+							padding-right: 10px;
+						}
+					}
+					a{
+						&:hover{
+							
+						}
+						
+
+					}
+					span.current{
+						
+					}
+				}
+			}
+		}
+		/* 年度消息分項清單 end */
+
+		/* 分頁清單 begin */
+		.pageJump{
+			&:before{
+				@extend %valignBefore;
+			}
+			padding: 0 25px;
+			text-align: center;
+			.jumps{
+				@include fontSize("18pt");
+				@extend %valignDo;
+				padding: 3px 5px;
+				margin: 0 5px;
+				
+				
+			}
+			a.jumps{
+				&:hover{
+					
+				}
+				
+			}
+			a.jumps.toPrev,
+			a.jumps.toNext{
+				&:hover{
+					
+					
+				}
+				@include fontSize("22pt");
+			}
+			span.jumps.current{
+
+				
+			}
+		}
+		/* 分頁清單 end */
+
+		/* 圖片式分項清單 begin */
+		.thumbSubsetList{
+			h3{
+				@include fontSize("20pt");
+				margin-bottom: 15px;
+				line-height: 1.5;
+			}
+			ol,
+			ul{
+				list-style: none;
+				li{
+					&:nth-child(3n){
+						margin-right: 0;
+					}
+					float: left;
+					width: 170px;
+					margin-right: 45px;
+					margin-bottom: 45px;
+					figure{
+						margin: 0;
+						padding: 0;
+						a.frame,
+						span.frame{
+							&:hover{
+								span.frameBroder{
+									border-width: 5px;
+									transition-property: border-width;
+									transition-duration: 0.18s;
+								}
+								span.frameBroder.video{
+									background-size: 20%;
+									border-width: 1px;
+									background-position: 90% 90%;
+									transition-property: background-color , background-size , background-position;
+									transition-duration: 0.18s;
+								}
+							}
+							display: block;
+							position: relative;
+							width: inherit;
+							height: 170px;
+							overflow: hidden;
+							img{
+								&.preload{
+									&~span.frameBroder{
+										
+									}
+									opacity: 0;
+									
+								}
+								opacity: 1;
+								transition-property: opacity;
+								transition-duration: 0.4s;
+							}
+						}
+						span.frameBroder{
+							position: absolute;
+							top: 0;
+							left: 0;
+							right: 0;
+							bottom: 0;
+							transition-property: border-width;
+							transition-duration: 0.18s;
+							pointer-events:none;
+						}
+						span.frameBroder.video{
+							background-size: 60%;
+							background-position: center center;
+							transition-property: background-color , background-size , background-position;
+						}	transition-duration: 0.18s;
+						
+						figcaption{
+							@extend %textOverflow;
+							display: block;
+							margin-top: 15px;
+							width: inherit;
+							min-height: 1rem;
+							a,
+							span{
+								@include fontSize("16pt");
+								
+							}
+							a{
+								&:hover{
+									
+								}
+								
+							}
+							span{
+								cursor: pointer;
+							}
+						}
+					}
+				}
+			}
+			ul{
+				display: none;
+			}
+		}
+		/* 圖片式分項清單 end */
+
+		hr.withShadow{
+			@include glowOut(3px , 1px , rgba(0,0,0,0.2));
+			opacity: 0.55;
+			
+		}
+	}
+	/* 網頁內容元件 end */
+
+	footer{
+		&:before{
+			@extend %valignBefore;
+		}
+		height: 80px;
+		address{
+			line-height: 1.5;
+		}
+		.add{
+			padding-left: 10px;
+		}
+		.cprs{
+			display: block;
+			margin-top: 5px;
+		}
+		.box{
+			@extend %valignDo;
+			@include fontSize("13pt");
+			*{
+				
+			}
+
+			.pc-ignore{
+				display: none;
+			}
+		}
+	}
+	
+}

@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/* Create with Gulp + SCSS on windows */
+/* ... Pu Yi Yuan 法雨山普宜苑官方網站 ... */
+*, .main * {
+  /*font-family: Arial, Helvetica, sans-serif, Microsoft YaHei, Microsoft JhengHei, '微软雅黑体', '微軟雅黑體', '微軟正黑體', '黑體' !important;*/
+  font-family: Arial, Helvetica, sans-serif  , STHeiti , Apple LiGothic Medium , Microsoft JhengHei, '微軟正黑體', '黑體' !important; }
+
+button {
+  background: none;
+  border: none; }
+
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden; }
+
+.hideItem {
+  display: none; }
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+  display: block;
+  width: 100%; }
+  .clearFloat:before, .clearFloat:after {
+    margin: 0;
+    padding: 0;
+    display: none; }
+
+.blockSelfCenter {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important; }
+
+.inlineBlockCenterReady {
+  display: inline-block !important;
+  text-align: center; }
+  .inlineBlockCenterReady .inlineBlockCenter {
+    display: inline-block !important; }
+    .inlineBlockCenterReady .inlineBlockCenter * {
+      text-align: initial; }
+
+.valignReady:before {
+  content: ' ';
+  display: inline-block !important;
+  vertical-align: middle;
+  margin-left: -0.25rem;
+  width: 0;
+  height: 100%;
+  /*搭配:before 擬元素的垂直置中效果part1*/ }
+
+.valignReady .valignStart,
+.valignReady .valignMiddle,
+.valignReady .valignEnd {
+  display: inline-block !important; }
+
+.valignReady .valignStart {
+  vertical-align: top;
+  /*搭配:before 擬元素的垂直置上效果part2-1*/ }
+
+.valignReady .valignMiddle {
+  vertical-align: middle;
+  /*搭配:before 擬元素的垂直置中效果part2-2*/ }
+
+.valignReady .valignEnd {
+  vertical-align: bottom;
+  /*搭配:before 擬元素的垂直置底效果part2-3*/ }
+
+.xyCenterReady {
+  display: inline-block !important;
+  text-align: center; }
+  .xyCenterReady:before {
+    content: ' ';
+    display: inline-block !important;
+    vertical-align: middle;
+    margin-left: -0.25rem;
+    width: 0;
+    height: 100%;
+    /*搭配:before 擬元素的垂直置中效果part1*/ }
+  .xyCenterReady .xyCenter {
+    display: inline-block !important;
+    vertical-align: middle; }
+    .xyCenterReady .xyCenter * {
+      text-align: initial; }
+
+select.styled {
+  appearance: none;
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  border: none;
+  background: #fff;
+  background-repeat: no-repeat; }
+
+select.styled::-ms-expand {
+  display: none;
+  /* remove default arrow on ie10 and ie11 */ }
+
+select.styled:disabled {
+  background-color: #ccc;
+  color: #666; }
+
+body {
+  scroll-behavior: smooth; }
+
+html {
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%; }
+
+#pingForRwd {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: -1000px;
+  left: -1000px; }
+
+#pingForRwd p {
+  float: left; }
+
+.main *,
+.main button:focus {
+  outline: none; }
+
+.main .preloadImg {
+  /*設定該容器內的圖檔需要預載處理*/
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #000;
+  background-image: url("../images/preloader.gif"); }
+
+.main .preloadImg img {
+  /*容器內的圖檔狀態*/
+  visibility: hidden; }

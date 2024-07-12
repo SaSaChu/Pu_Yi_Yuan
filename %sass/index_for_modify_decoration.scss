@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* Create with Gulp + SCSS on windows */
+/* ... Pu Yi Yuan 法雨山普宜苑官方網站 ... */
+@import '_mixins.scss';
+@import '_extends.scss';
+$fontUrl : '../webfonts/iconfont/';
+@font-face {
+  font-family: 'un';
+  src:  url($fontUrl + 'un.eot?30vszg');
+  src:  url($fontUrl + 'un.eot?30vszg#iefix') format('embedded-opentype'),
+    url($fontUrl + 'un.ttf?30vszg') format('truetype'),
+    url($fontUrl + 'un.woff?30vszg') format('woff'),
+    url($fontUrl + 'un.svg?30vszg#un') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'un' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook2:before {
+  content: "\ea91";
+}
+
+.main{
+	.cover{
+		background-image: url('../images/bg.png');
+
+		.ctx{
+			h2{
+				color:#94693c;
+				font-weight: bold;
+				letter-spacing: 25px;
+				word-spacing: 25px;
+			}
+			p{
+
+			}
+			a{
+
+				color:#2e2e2e;
+
+			}
+			.fb{
+				color: #4055a0;
+			}
+		}
+	}
+	footer{
+
+		background-color: #181818;
+		*{
+			color:#ffffff;
+		}
+	}
+}

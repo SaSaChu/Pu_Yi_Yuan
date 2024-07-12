@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,width=device-width,user-scalable=no, shrink-to-fit=no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CSS 樣式跳脫器</title>
+<style type="text/css">
+<!--
+textarea,
+button{
+	position:absolute;
+	width:100%;
+}
+#source,
+#extract{
+	height:calc(100% / 2 - 50px - 2px);
+}
+#source{
+	top:0;
+}
+#extract{
+	top:calc(100% / 2 + 25px - 1px);
+}
+#doIt{
+	top:calc(100% / 2 - 50px);
+	height:75px;
+}
+-->
+</style>
+</head>
+
+<body>
+<script language="javascript" type="text/javascript">
+	function doIt(){
+		var source_ary = document.getElementById('source').value.split('\n');
+		var scode = '';
+		for(var i = 0;i<source_ary.length;i++){
+			if(source_ary[i].indexOf(';') == -1){
+				scode += source_ary[i] + '\n';
+			}
+		}
+		document.getElementById('extract').value = scode;
+	}
+</script>
+	<div style="position:absolute; top:0; left:20%; bottom:0; right:20%;">
+        <textarea id="source" place="來源"></textarea>
+        <button id="doIt" type="button" onclick="doIt();">跳脫</button>
+        <textarea id="extract" place="輸出"></textarea>
+    </div>
+</body>
+</html>

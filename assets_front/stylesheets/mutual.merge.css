@@ -1,0 +1,1298 @@
+@charset "utf-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,caption, tbody, tfoot, thead
+ {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;										
+    vertical-align: baseline;
+}
+body {
+    line-height: 1;
+}
+ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+@charset "UTF-8";
+/* Create with Gulp + SCSS on windows */
+/* ... Pu Yi Yuan 法雨山普宜苑官方網站 ... */
+.BGplayer button {
+  background: none;
+  border: none; }
+
+.main > div.wrapper {
+  margin: 0 auto; }
+
+.main section .pageJump:before, .main footer:before {
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 100%;
+  /*搭配:before 擬元素的垂直置中效果part1*/ }
+
+.main section .pageJump .jumps, .main footer .box {
+  display: inline-block;
+  vertical-align: middle;
+  /*搭配:before 擬元素的垂直置中效果part2*/ }
+
+.main nav.breadCrumb ul li, .main section .thumbSubsetList ol li figure figcaption,
+.main section .thumbSubsetList ul li figure figcaption {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden; }
+
+.hideItem {
+  display: none; }
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+  display: block;
+  width: 100%; }
+  .clearFloat:before, .clearFloat:after {
+    margin: 0;
+    padding: 0;
+    display: none; }
+
+.blockSelfCenter {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important; }
+
+.inlineBlockCenterReady {
+  display: inline-block !important;
+  text-align: center; }
+  .inlineBlockCenterReady .inlineBlockCenter {
+    display: inline-block !important; }
+    .inlineBlockCenterReady .inlineBlockCenter * {
+      text-align: initial; }
+
+.valignReady:before {
+  content: ' ';
+  display: inline-block !important;
+  vertical-align: middle;
+  margin-left: -0.25rem;
+  width: 0;
+  height: 100%;
+  /*搭配:before 擬元素的垂直置中效果part1*/ }
+
+.valignReady .valignStart,
+.valignReady .valignMiddle,
+.valignReady .valignEnd {
+  display: inline-block !important; }
+
+.valignReady .valignStart {
+  vertical-align: top;
+  /*搭配:before 擬元素的垂直置上效果part2-1*/ }
+
+.valignReady .valignMiddle {
+  vertical-align: middle;
+  /*搭配:before 擬元素的垂直置中效果part2-2*/ }
+
+.valignReady .valignEnd {
+  vertical-align: bottom;
+  /*搭配:before 擬元素的垂直置底效果part2-3*/ }
+
+.xyCenterReady {
+  display: inline-block !important;
+  text-align: center; }
+  .xyCenterReady:before {
+    content: ' ';
+    display: inline-block !important;
+    vertical-align: middle;
+    margin-left: -0.25rem;
+    width: 0;
+    height: 100%;
+    /*搭配:before 擬元素的垂直置中效果part1*/ }
+  .xyCenterReady .xyCenter {
+    display: inline-block !important;
+    vertical-align: middle; }
+    .xyCenterReady .xyCenter * {
+      text-align: initial; }
+
+select.styled {
+  appearance: none;
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  border: none;
+  background: #fff;
+  background-repeat: no-repeat; }
+
+select.styled::-ms-expand {
+  display: none;
+  /* remove default arrow on ie10 and ie11 */ }
+
+select.styled:disabled {
+  background-color: #ccc;
+  color: #666; }
+
+#pingForRwd {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: -1000px;
+  left: -1000px; }
+
+#pingForRwd p {
+  float: left; }
+
+/* 全站背景音樂播放開關 begin */
+.BGplayer {
+  position: fixed;
+  top: calc(-1.8rem - 4px);
+  left: 0;
+  width: calc(100% - 4px);
+  height: 1.8rem;
+  z-index: 9; }
+  .BGplayer.show {
+    top: 0; }
+  .BGplayer audio {
+    position: absolute;
+    top: -10000px;
+    left: -10000px; }
+  .BGplayer button {
+    float: left;
+    height: 100%; }
+    .BGplayer button:active span {
+      padding-top: 1px;
+      padding-left: 1px; }
+    .BGplayer button span {
+      display: inline-block; }
+  .BGplayer button.closeHintBg {
+    padding: 0;
+    width: 3rem; }
+  .BGplayer button.playBg {
+    padding: 0 0.35rem;
+    width: calc(100% - 3rem); }
+    .BGplayer button.playBg .text {
+      float: left; }
+    .BGplayer button.playBg .author {
+      float: right; }
+
+/* 全站背景音樂播放開關 end */
+.main {
+  /* 網頁限制寬度並置中的容器 begin */
+  /* 網頁限制寬度並置中的容器 end */
+  /* 表頭,選單,大標 begin */
+  /* 表頭,選單,大標 end */
+  /* 網站內容段落 begin */
+  /* 網站內容段落 end */
+  /* 網站主選單 begin */
+  /* 網站主選單 end */
+  /* 網站麵包屑 begin */
+  /* 網站麵包屑 end */
+  /* 網頁內容左側欄 begin */
+  /* 網頁內容左側欄 end */
+  /* 網頁內容右側欄 begin */
+  /* 網頁內容右側欄 end */
+  /* 網頁內容元件 begin */
+  /* 網頁內容元件 end */ }
+  .main > div.wrapper {
+    width: 1000px; }
+  .main .pageTop {
+    position: relative; }
+    .main .pageTop header,
+    .main .pageTop .siteMenu {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      z-index: 1; }
+    .main .pageTop header {
+      top: 0;
+      height: 100%; }
+      .main .pageTop header .siteLogo {
+        display: inline-block;
+        margin-top: 42px;
+        margin-left: 57px; }
+    .main .pageTop .siteMenu {
+      bottom: -48px;
+      height: 52px; }
+      .main .pageTop .siteMenu ul {
+        display: block;
+        padding-top: 5px; }
+        .main .pageTop .siteMenu ul li {
+          display: inline-block;
+          padding: 0px 1.5rem; }
+      .main .pageTop .siteMenu .FBpage {
+        position: absolute;
+        bottom: -6px;
+        right: 23px;
+        width: 65px;
+        height: 65px;
+        z-index: 1; }
+      .main .pageTop .siteMenu .menuIOBtn.openMenu {
+        display: none; }
+    .main .pageTop .banner {
+      width: 100%;
+      height: auto; }
+  .main section.pageCtx {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 60px; }
+    .main section.pageCtx aside.sideOptions {
+      float: left;
+      width: 140px; }
+    .main section.pageCtx dl.contentBlock {
+      float: right;
+      width: 600px; }
+  .main nav.siteMenu li a {
+    font-size: 100%;
+    display: inline-block;
+    position: relative;
+    font-weight: bold; }
+    .main nav.siteMenu li a:hover:before {
+      position: absolute;
+      right: 0;
+      bottom: -6px;
+      width: 100%;
+      height: 6px;
+      z-index: 1;
+      content: ' '; }
+  .main nav.siteMenu .menuCover {
+    display: none; }
+  .main nav.breadCrumb {
+    margin: 65px 25px;
+    margin-bottom: 0; }
+    .main nav.breadCrumb ul {
+      display: block; }
+      .main nav.breadCrumb ul li:last-child:after {
+        display: none; }
+      .main nav.breadCrumb ul li {
+        display: inline-block;
+        max-width: 25rem; }
+        .main nav.breadCrumb ul li:after {
+          content: '/';
+          margin-left: 5px; }
+        .main nav.breadCrumb ul li a,
+        .main nav.breadCrumb ul li span {
+          font-size: 89%; }
+  .main aside.sideOptions {
+    position: relative;
+    /* 單元項目選單 begin */
+    /* 單元項目選單 end */ }
+    .main aside.sideOptions .cap {
+      height: 38px; }
+    .main aside.sideOptions h3 {
+      font-size: 1em; }
+      .main aside.sideOptions h3 span {
+        font-size: 100%;
+        display: block;
+        margin: 0 15%;
+        padding-bottom: 6px; }
+    .main aside.sideOptions .contentMenu ul {
+      margin-top: 25px;
+      padding-bottom: 190px; }
+    .main aside.sideOptions .contentMenu li {
+      margin-bottom: 10px;
+      padding: 0 5px; }
+      .main aside.sideOptions .contentMenu li a,
+      .main aside.sideOptions .contentMenu li span.current {
+        font-size: 93%;
+        line-height: 1.5; }
+    .main aside.sideOptions .puppet {
+      position: absolute;
+      bottom: -98px;
+      left: -63px;
+      width: 203px;
+      height: 264px;
+      z-index: 1; }
+  .main dl.contentBlock dt.title {
+    position: relative;
+    margin-bottom: 10px;
+    line-height: 1.25; }
+    .main dl.contentBlock dt.title span {
+      font-size: 119%;
+      display: inline-block; }
+    .main dl.contentBlock dt.title span.page {
+      display: inline; }
+    .main dl.contentBlock dt.title .ink {
+      position: absolute;
+      top: -2px;
+      left: -30px;
+      width: 20px;
+      height: 20px;
+      z-index: 1; }
+    .main dl.contentBlock dt.title .mobileSideOption {
+      display: none; }
+      .main dl.contentBlock dt.title .mobileSideOption ul {
+        /* 從IE9 開始支援 */
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        /* 從IE9 開始支援 */
+        -webkit-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.35);
+        box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.35); }
+      .main dl.contentBlock dt.title .mobileSideOption .menuIOBtn:active {
+        /* 從IE9 開始支援 */
+        -webkit-box-shadow: 0px 0px 7px 4px rgba(0, 104, 183, 0.35);
+        -moz-box-shadow: 0px 0px 7px 4px rgba(0, 104, 183, 0.35);
+        box-shadow: 0px 0px 7px 4px rgba(0, 104, 183, 0.35); }
+  .main dl.contentBlock dd .posterWrapper,
+  .main dl.contentBlock dd .subsetList,
+  .main dl.contentBlock dd .thumbSubsetList,
+  .main dl.contentBlock dd .ckx {
+    margin-bottom: 25px; }
+  .main dl.contentBlock dd hr.withShadow {
+    margin: 40px 0; }
+  .main section {
+    /* 最新消息的年度消息圖框 begin */
+    /* 最新消息的年度消息圖框 end */
+    /* 年度消息分項清單 begin */
+    /* 年度消息分項清單 end */
+    /* 分頁清單 begin */
+    /* 分頁清單 end */
+    /* 圖片式分項清單 begin */
+    /* 圖片式分項清單 end */ }
+    .main section h4.dateTime {
+      margin-bottom: 5px;
+      font-size: 1em; }
+      .main section h4.dateTime time {
+        font-size: 119%; }
+    .main section h2.contentTitle {
+      font-size: 129%;
+      margin-bottom: 15px;
+      line-height: 1.5; }
+    .main section div.backPrev {
+      font-size: 100%; }
+    .main section .ckx * {
+      margin-bottom: 10px;
+      line-height: 1.25; }
+    .main section .ckx p {
+      font-size: 100%;
+      margin-bottom: 30px;
+      line-height: 1.8; }
+    .main section .ckx img {
+      margin: 3px;
+      max-width: 100%;
+      width: auto;
+      height: auto; }
+    .main section .ckx a {
+      padding: 0 2px; }
+    .main section .posterWrapper figure {
+      margin: 0;
+      padding: 0; }
+    .main section .posterWrapper .frameTop img,
+    .main section .posterWrapper .frameMiddle img,
+    .main section .posterWrapper .frameBottom img {
+      display: block;
+      width: 100%;
+      height: auto; }
+    .main section .posterWrapper .frameMiddle {
+      padding-left: 18px;
+      padding-right: 18px; }
+    .main section .subsetList h3 {
+      margin-bottom: 5px;
+      font-size: 136%;
+      line-height: 1.5; }
+    .main section .subsetList ol {
+      list-style: none; }
+      .main section .subsetList ol li a,
+      .main section .subsetList ol li span.current {
+        display: inline-block;
+        padding: 15px;
+        padding-left: 0;
+        font-size: 100%;
+        line-height: 1.5; }
+        .main section .subsetList ol li a time,
+        .main section .subsetList ol li span.current time {
+          padding-right: 10px; }
+    .main section .pageJump {
+      padding: 0 25px;
+      text-align: center; }
+      .main section .pageJump .jumps {
+        font-size: 100%;
+        padding: 3px 5px;
+        margin: 0 5px; }
+      .main section .pageJump a.jumps.toPrev,
+      .main section .pageJump a.jumps.toNext {
+        font-size: 129%; }
+    .main section .thumbSubsetList h3 {
+      font-size: 119%;
+      margin-bottom: 15px;
+      line-height: 1.5; }
+    .main section .thumbSubsetList ol,
+    .main section .thumbSubsetList ul {
+      list-style: none; }
+      .main section .thumbSubsetList ol li,
+      .main section .thumbSubsetList ul li {
+        float: left;
+        width: 170px;
+        margin-right: 45px;
+        margin-bottom: 45px; }
+        .main section .thumbSubsetList ol li:nth-child(3n),
+        .main section .thumbSubsetList ul li:nth-child(3n) {
+          margin-right: 0; }
+        .main section .thumbSubsetList ol li figure,
+        .main section .thumbSubsetList ul li figure {
+          margin: 0;
+          padding: 0;
+          transition-duration: 0.18s; }
+          .main section .thumbSubsetList ol li figure a.frame,
+          .main section .thumbSubsetList ol li figure span.frame,
+          .main section .thumbSubsetList ul li figure a.frame,
+          .main section .thumbSubsetList ul li figure span.frame {
+            display: block;
+            position: relative;
+            width: inherit;
+            height: 170px;
+            overflow: hidden; }
+            .main section .thumbSubsetList ol li figure a.frame:hover span.frameBroder,
+            .main section .thumbSubsetList ol li figure span.frame:hover span.frameBroder,
+            .main section .thumbSubsetList ul li figure a.frame:hover span.frameBroder,
+            .main section .thumbSubsetList ul li figure span.frame:hover span.frameBroder {
+              border-width: 5px;
+              transition-property: border-width;
+              transition-duration: 0.18s; }
+            .main section .thumbSubsetList ol li figure a.frame:hover span.frameBroder.video,
+            .main section .thumbSubsetList ol li figure span.frame:hover span.frameBroder.video,
+            .main section .thumbSubsetList ul li figure a.frame:hover span.frameBroder.video,
+            .main section .thumbSubsetList ul li figure span.frame:hover span.frameBroder.video {
+              background-size: 20%;
+              border-width: 1px;
+              background-position: 90% 90%;
+              transition-property: background-color , background-size , background-position;
+              transition-duration: 0.18s; }
+            .main section .thumbSubsetList ol li figure a.frame img,
+            .main section .thumbSubsetList ol li figure span.frame img,
+            .main section .thumbSubsetList ul li figure a.frame img,
+            .main section .thumbSubsetList ul li figure span.frame img {
+              opacity: 1;
+              transition-property: opacity;
+              transition-duration: 0.4s; }
+              .main section .thumbSubsetList ol li figure a.frame img.preload,
+              .main section .thumbSubsetList ol li figure span.frame img.preload,
+              .main section .thumbSubsetList ul li figure a.frame img.preload,
+              .main section .thumbSubsetList ul li figure span.frame img.preload {
+                opacity: 0; }
+          .main section .thumbSubsetList ol li figure span.frameBroder,
+          .main section .thumbSubsetList ul li figure span.frameBroder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transition-property: border-width;
+            transition-duration: 0.18s;
+            pointer-events: none; }
+          .main section .thumbSubsetList ol li figure span.frameBroder.video,
+          .main section .thumbSubsetList ul li figure span.frameBroder.video {
+            background-size: 60%;
+            background-position: center center;
+            transition-property: background-color , background-size , background-position; }
+          .main section .thumbSubsetList ol li figure figcaption,
+          .main section .thumbSubsetList ul li figure figcaption {
+            display: block;
+            margin-top: 15px;
+            width: inherit;
+            min-height: 1rem; }
+            .main section .thumbSubsetList ol li figure figcaption a,
+            .main section .thumbSubsetList ol li figure figcaption span,
+            .main section .thumbSubsetList ul li figure figcaption a,
+            .main section .thumbSubsetList ul li figure figcaption span {
+              font-size: 93%; }
+            .main section .thumbSubsetList ol li figure figcaption span,
+            .main section .thumbSubsetList ul li figure figcaption span {
+              cursor: pointer; }
+    .main section .thumbSubsetList ul {
+      display: none; }
+    .main section hr.withShadow {
+      /* 從IE9 開始支援 */
+      -webkit-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+      opacity: 0.55; }
+  .main footer {
+    height: 80px; }
+    .main footer address {
+      line-height: 1.5; }
+    .main footer .add {
+      padding-left: 10px; }
+    .main footer .cprs {
+      display: block;
+      margin-top: 5px; }
+    .main footer .box {
+      font-size: 80%; }
+      .main footer .box .pc-ignore {
+        display: none; }
+
+@charset "UTF-8";
+/* Create with Gulp + SCSS on windows */
+/* ... Pu Yi Yuan 法雨山普宜苑官方網站 ... */
+/*
+@media (orientation:portrait){}
+@media (orientation:landscape){}
+*/
+@media (max-width: 767.98px) {
+  #pingForRwd p {
+    float: right; }
+  .main {
+    /* 網頁限制寬度並置中的容器 begin */
+    /* 網頁限制寬度並置中的容器 end */
+    /* 表頭,選單,大標 begin */
+    /* 表頭,選單,大標 end */
+    /* 網站內容段落 begin */
+    /* 網站內容段落 end */
+    /* 網站主選單 begin */
+    /* 網站主選單 end */
+    /* 網站麵包屑 begin */
+    /* 網站麵包屑 end */
+    /* 網頁內容右側欄 begin */
+    /* 網頁內容右側欄 end */
+    /* 網頁內容元件 begin */
+    /* 網頁內容元件 end */ }
+    .main > div.wrapper {
+      margin: 0 0.75rem;
+      width: auto; }
+    .main .pageTop header .siteLogo {
+      margin-top: 10px;
+      margin-left: 7px;
+      width: 58px;
+      height: 65px; }
+      .main .pageTop header .siteLogo img {
+        width: 100%;
+        height: auto; }
+    .main .pageTop .siteMenu {
+      bottom: -30px;
+      height: 35px; }
+      .main .pageTop .siteMenu ul {
+        display: none; }
+        .main .pageTop .siteMenu ul.openMenu {
+          display: block; }
+        .main .pageTop .siteMenu ul li {
+          display: list-item;
+          padding: 0; }
+      .main .pageTop .siteMenu .FBpage {
+        bottom: auto;
+        top: 22px;
+        right: calc(40px + 1rem);
+        width: 30px;
+        height: 30px; }
+      .main .pageTop .siteMenu .menuIOBtn.openMenu {
+        display: block; }
+    .main section.pageCtx {
+      margin-top: 10px;
+      padding-left: 1rem;
+      padding-right: 1rem; }
+      .main section.pageCtx aside.sideOptions {
+        float: none;
+        display: none; }
+      .main section.pageCtx dl.contentBlock {
+        float: none;
+        width: 100%; }
+        .main section.pageCtx dl.contentBlock dt.title > * {
+          display: none; }
+        .main section.pageCtx dl.contentBlock dt.title .mobileSideOption {
+          display: block; } }
+  @media (max-width: 767.98px) and (orientation: landscape) {
+    .main nav.siteMenu {
+      background-size: cover; } }
+
+@media (max-width: 767.98px) {
+    .main nav.siteMenu ul.openMenu {
+      position: fixed;
+      top: 0;
+      left: 55%;
+      bottom: 0;
+      right: 0;
+      z-index: 3;
+      padding-top: 40px; }
+      .main nav.siteMenu ul.openMenu li a {
+        display: block;
+        padding: 15px; }
+    .main nav.siteMenu li a:hover:before {
+      display: none; }
+    .main nav.siteMenu .menuIOBtn {
+      font-size: 1.25rem;
+      z-index: 3; }
+      .main nav.siteMenu .menuIOBtn.openMenu {
+        /* 從IE9 開始支援 */
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+        position: absolute;
+        top: 22px;
+        right: 1rem;
+        width: 30px;
+        height: 30px; }
+        .main nav.siteMenu .menuIOBtn.openMenu i.icon-menu {
+          display: inline-block; }
+        .main nav.siteMenu .menuIOBtn.openMenu i.icon-cross {
+          display: none; }
+      .main nav.siteMenu .menuIOBtn.closeMenu {
+        /* 從IE9 開始支援 */
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        position: fixed;
+        top: 0px;
+        right: 0;
+        width: 45%;
+        height: 40px; }
+        .main nav.siteMenu .menuIOBtn.closeMenu i.icon-menu {
+          display: none; }
+        .main nav.siteMenu .menuIOBtn.closeMenu i.icon-cross {
+          display: inline-block; }
+      .main nav.siteMenu .menuIOBtn i {
+        padding-top: 5px; }
+    .main nav.siteMenu .menuCover {
+      z-index: 2; }
+      .main nav.siteMenu .menuCover.openMenu {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%; }
+    .main nav.breadCrumb {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      margin: 0;
+      margin-top: 33px; }
+      .main nav.breadCrumb ul {
+        display: block; }
+        .main nav.breadCrumb ul li {
+          max-width: 10rem; }
+          .main nav.breadCrumb ul li a,
+          .main nav.breadCrumb ul li span {
+            font-size: 93%; }
+    .main dl.contentBlock dt.title .mobileSideOption {
+      display: block;
+      padding: 10px 0; }
+      .main dl.contentBlock dt.title .mobileSideOption .labelBox {
+        position: relative;
+        padding-left: 25px;
+        width: calc(100% - 25px - 50px);
+        padding-top: 5px;
+        height: 22px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+        .main dl.contentBlock dt.title .mobileSideOption .labelBox span {
+          font-size: 93%; }
+      .main dl.contentBlock dt.title .mobileSideOption ul {
+        position: absolute;
+        opacity: 0;
+        top: -100000px;
+        right: 0;
+        left: 0;
+        z-index: 2;
+        padding: 5px 10px; }
+        .main dl.contentBlock dt.title .mobileSideOption ul.menuOpen {
+          top: 55px;
+          opacity: 1;
+          transition-property: opacity;
+          transition-duration: 0.65s; }
+        .main dl.contentBlock dt.title .mobileSideOption ul li {
+          word-break: break-all; }
+          .main dl.contentBlock dt.title .mobileSideOption ul li a {
+            display: block;
+            padding: 15px 5px; }
+      .main dl.contentBlock dt.title .mobileSideOption .ink {
+        top: 2px;
+        left: 0; }
+      .main dl.contentBlock dt.title .mobileSideOption .menuIOBtn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        text-align: right; }
+        .main dl.contentBlock dt.title .mobileSideOption .menuIOBtn.menuClose i.icon-triangle-down {
+          display: inline-block; }
+        .main dl.contentBlock dt.title .mobileSideOption .menuIOBtn.menuClose i.icon-triangle-up {
+          display: none; }
+        .main dl.contentBlock dt.title .mobileSideOption .menuIOBtn.menuOpen i.icon-triangle-down {
+          display: none; }
+        .main dl.contentBlock dt.title .mobileSideOption .menuIOBtn.menuOpen i.icon-triangle-up {
+          display: inline-block; }
+        .main dl.contentBlock dt.title .mobileSideOption .menuIOBtn i {
+          margin-right: 10px; }
+    .main section {
+      /* 分頁清單 begin */
+      /* 分頁清單 end */
+      /* 圖片式分項清單 begin */
+      /* 圖片式分項清單 end */ }
+      .main section .pageJump {
+        padding: 0 5px; }
+        .main section .pageJump .jumps {
+          margin: 0 3px; }
+      .main section .thumbSubsetList {
+        position: relative; }
+        .main section .thumbSubsetList ol,
+        .main section .thumbSubsetList ul {
+          position: absolute;
+          top: -10000px;
+          left: -10000px; }
+          .main section .thumbSubsetList ol li,
+          .main section .thumbSubsetList ul li {
+            position: absolute;
+            top: 0;
+            left: 0;
+            float: none;
+            margin-right: 0;
+            margin-bottom: 0; }
+            .main section .thumbSubsetList ol li:nth-child(3n), .main section .thumbSubsetList ol li:nth-child(2n),
+            .main section .thumbSubsetList ul li:nth-child(3n),
+            .main section .thumbSubsetList ul li:nth-child(2n) {
+              margin-right: 0; }
+        .main section .thumbSubsetList ul {
+          position: static;
+          display: block;
+          top: auto;
+          left: auto; }
+          .main section .thumbSubsetList ul li {
+            position: static;
+            top: auto;
+            left: auto;
+            width: 100%; }
+            .main section .thumbSubsetList ul li div.ctx {
+              height: calc(40vh + 50px); }
+            .main section .thumbSubsetList ul li figure figcaption {
+              min-height: inherit; }
+            .main section .thumbSubsetList ul li figure a.frame,
+            .main section .thumbSubsetList ul li figure span.frame {
+              width: inherit;
+              height: 40vh; } }
+          @media (max-width: 767.98px) and (orientation: landscape) {
+            .main section .thumbSubsetList ul li div.ctx {
+              height: calc(70vw + 50px); }
+            .main section .thumbSubsetList ul li figure a.frame,
+            .main section .thumbSubsetList ul li figure span.frame {
+              height: 70vw; } }
+
+@media (max-width: 767.98px) {
+    .main footer {
+      height: auto; }
+      .main footer:before {
+        display: none; }
+      .main footer .box {
+        display: block;
+        padding: 1rem 0.75rem; }
+        .main footer .box .pc-ignore {
+          display: inline; }
+        .main footer .box .phone-ignore {
+          display: none; }
+        .main footer .box .tablet-ignore {
+          display: none; }
+  /* 全站背景音樂播放開關 begin */
+  .BGplayer button.playBg .author {
+    padding-top: 4px;
+    font-size: 0.5rem; }
+  /* 全站背景音樂播放開關 end */ }
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #pingForRwd p {
+    float: right; } }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #pingForRwd p {
+    float: right; }
+  .main {
+    /* 網頁限制寬度並置中的容器 begin */
+    /* 網頁限制寬度並置中的容器 end */
+    /* 表頭,選單,大標 begin */
+    /* 表頭,選單,大標 end */
+    /* 網站內容段落 begin */
+    /* 網站內容段落 end */
+    /* 網站主選單 begin */
+    /* 網站主選單 end */
+    /* 網站麵包屑 begin */
+    /* 網站麵包屑 end */
+    /* 網頁內容左側欄 begin */
+    /* 網頁內容左側欄 end */
+    /* 網頁內容元件 begin */
+    /* 網頁內容元件 end */ }
+    .main > div.wrapper {
+      margin: 0 1rem;
+      width: auto; }
+    .main .pageTop header .siteLogo {
+      margin-top: 30px;
+      margin-left: 40px;
+      width: 106px;
+      height: 119px; }
+      .main .pageTop header .siteLogo img {
+        width: 100%;
+        height: auto; }
+    .main .pageTop .siteMenu ul {
+      padding-top: 0; }
+    .main .pageTop .siteMenu .FBpage {
+      bottom: -23px;
+      right: 23px;
+      width: 38px;
+      height: 38px; }
+    .main section.pageCtx {
+      padding-left: 55px;
+      padding-right: 20px; }
+      .main section.pageCtx aside.sideOptions {
+        width: 130px; }
+      .main section.pageCtx dl.contentBlock {
+        width: calc(100% - 200px); }
+    .main nav.siteMenu li a {
+      font-size: 93%; }
+    .main nav.breadCrumb ul li {
+      max-width: 20rem; }
+    .main aside.sideOptions {
+      /* 單元項目選單 begin */
+      /* 單元項目選單 end */ }
+      .main aside.sideOptions .cap {
+        height: 35px; }
+      .main aside.sideOptions .puppet {
+        bottom: -79px;
+        left: -47px;
+        width: 177px;
+        height: 230px; }
+    .main section {
+      /* 圖片式分項清單 begin */
+      /* 圖片式分項清單 end */ }
+      .main section .thumbSubsetList ol {
+        list-style: none; }
+        .main section .thumbSubsetList ol li {
+          float: left;
+          width: 200px;
+          margin-right: calc((100% - (200px + 5px) * 2) / 2);
+          margin-bottom: 45px; }
+          .main section .thumbSubsetList ol li:nth-child(3n) {
+            margin-right: calc((100% - (200px + 5px) * 2) / 2); }
+          .main section .thumbSubsetList ol li:nth-child(2n) {
+            margin-right: 0; }
+          .main section .thumbSubsetList ol li figure a.frame,
+          .main section .thumbSubsetList ol li figure span.frame {
+            height: 200px; }
+      .main section .thumbSubsetList ul {
+        display: none; }
+    .main footer {
+      height: auto; }
+      .main footer:before {
+        display: none; }
+      .main footer .box {
+        display: block;
+        padding: 1rem 0.75rem; }
+        .main footer .box .pc-ignore {
+          display: inline-block; }
+        .main footer .box .tablet-ignore {
+          display: none; } }
+
+@charset "UTF-8";
+/* Create with Gulp + SCSS on windows */
+/* ... Pu Yi Yuan 法雨山普宜苑官方網站 ... */
+.main * {
+  /*font-family: Arial, Helvetica, sans-serif, Microsoft YaHei, Microsoft JhengHei, '微软雅黑体', '微軟雅黑體', '微軟正黑體', '黑體' !important;*/
+  font-family: Arial, Helvetica, sans-serif  , STHeiti , Apple LiGothic Medium , Microsoft JhengHei, '微軟正黑體', '黑體' !important; }
+
+.main button {
+  background: none;
+  border: none; }
+
+body {
+  scroll-behavior: smooth; }
+
+html {
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%; }
+
+body {
+  background-image: url("../images/bg001.png"); }
+
+/* 全站背景音樂播放開關 begin */
+.BGplayer {
+  border: #550000 solid 2px;
+  background-color: rgba(245, 233, 25, 0.5);
+  transition: top 0.35s; }
+  .BGplayer button {
+    font-size: 0.75rem;
+    cursor: pointer; }
+    .BGplayer button:active {
+      border: #333 dashed 1px; }
+
+/* 全站背景音樂播放開關 end */
+.main {
+  /* 網頁限制寬度並置中的容器 begin */
+  /* 網頁限制寬度並置中的容器 end */
+  /* 表頭,選單,大標 begin */
+  /* 表頭,選單,大標 end */
+  /* 網站內容段落 begin */
+  /* 網站內容段落 end */
+  /* 網站主選單 begin */
+  /* 網站主選單 end */
+  /* 網站麵包屑 begin */
+  /* 網站麵包屑 end */
+  /* 網頁內容左側欄 begin */
+  /* 網頁內容左側欄 end */
+  /* 網頁內容右側欄 begin */
+  /* 網頁內容右側欄 end */
+  /* 網頁內容元件 begin */
+  /* 網頁內容元件 end */ }
+  .main *,
+  .main button:focus {
+    outline: none; }
+  .main > div.wrapper {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.45);
+    box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.45); }
+  .main .pageTop .siteMenu {
+    text-align: center; }
+  .main nav.siteMenu {
+    background-repeat: no-repeat;
+    background-image: url("../images/nav002.jpg");
+    background-size: contain; }
+    .main nav.siteMenu li {
+      border-right: #fff solid 1px; }
+      .main nav.siteMenu li:last-child {
+        border-right: none; }
+      .main nav.siteMenu li a {
+        color: #fff;
+        text-decoration: none; }
+        .main nav.siteMenu li a:hover:before {
+          background-repeat: no-repeat;
+          background-position: 10px center;
+          background-image: url("../images/hover.png"); }
+    .main nav.siteMenu .FBpage {
+      background-size: contain;
+      background-image: url("../images/facebook.png"); }
+    .main nav.siteMenu .menuIOBtn i.icon-cross {
+      color: #b4854c; }
+  .main nav.breadCrumb ul li a,
+  .main nav.breadCrumb ul li span {
+    text-decoration: none;
+    color: #454545; }
+  .main nav.breadCrumb ul li a:hover {
+    color: #b4854c; }
+  .main aside.sideOptions {
+    /* 單元項目選單 begin */
+    /* 單元項目選單 end */ }
+    .main aside.sideOptions .cap {
+      background-size: contain;
+      background-image: url("../images/sidebartop.png");
+      background-repeat: no-repeat; }
+    .main aside.sideOptions h3 span {
+      color: #3a3a3a;
+      text-align: center;
+      border-bottom: #ba8d5a solid 1px; }
+    .main aside.sideOptions .contentMenu {
+      background-image: url("../images/sidebarbg.png");
+      background-size: contain;
+      background-repeat: repeat-y;
+      background-position: left top; }
+      .main aside.sideOptions .contentMenu li {
+        text-align: center;
+        word-break: break-all; }
+        .main aside.sideOptions .contentMenu li a,
+        .main aside.sideOptions .contentMenu li span.current {
+          text-decoration: none; }
+        .main aside.sideOptions .contentMenu li a {
+          color: #636363; }
+          .main aside.sideOptions .contentMenu li a:hover {
+            color: #b4854c; }
+        .main aside.sideOptions .contentMenu li span.current {
+          color: #b4854c; }
+    .main aside.sideOptions .puppet {
+      background-image: url("../images/sidebardown.png");
+      background-size: cover;
+      background-repeat: no-repeat; }
+  .main dl.contentBlock dt.title span {
+    font-weight: bold;
+    color: #b4854c; }
+  .main dl.contentBlock dt.title .ink {
+    background-image: url("../images/dot.png");
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .main dl.contentBlock dt.title .mobileSideOption {
+    border-top: #b4854c solid 1px;
+    border-bottom: #b4854c solid 1px; }
+    .main dl.contentBlock dt.title .mobileSideOption .menuIOBtn {
+      color: #b4854c; }
+  .main section {
+    /* 最新消息的年度消息圖框 begin */
+    /* 最新消息的年度消息圖框 end */
+    /* 年度消息分項清單 begin */
+    /* 年度消息分項清單 end */
+    /* 分頁清單 begin */
+    /* 分頁清單 end */
+    /* 圖片式分項清單 begin */
+    /* 圖片式分項清單 end */ }
+    .main section h4.dateTime {
+      color: #333;
+      font-weight: normal; }
+    .main section h2.contentTitle {
+      color: #c0021d;
+      letter-spacing: 1px;
+      word-spacing: 1px; }
+    .main section div.backPrev {
+      color: #b4854c; }
+      .main section div.backPrev a {
+        color: #b4854c;
+        text-decoration: none; }
+        .main section div.backPrev a:hover {
+          text-decoration: underline; }
+    .main section .ckx * {
+      color: #463f42; }
+    .main section .ckx * > * {
+      color: inherit;
+      font-weight: inherit; }
+    .main section .ckx p {
+      color: #333;
+      /*word-break:break-all;*/ }
+    .main section .ckx a {
+      color: #64b6d2;
+      text-decoration: underline; }
+      .main section .ckx a:hover {
+        text-decoration: none; }
+    .main section .posterWrapper .frameMiddle {
+      background-repeat: repeat-y;
+      background-size: contain;
+      background-image: url("../images/slideText03.png"); }
+    .main section .subsetList h3 {
+      color: #b4854c;
+      text-align: center; }
+    .main section .subsetList ol li {
+      border-bottom: #333 dashed 1px; }
+      .main section .subsetList ol li:last-child {
+        border-bottom: none; }
+      .main section .subsetList ol li a {
+        color: #333;
+        text-decoration: none; }
+        .main section .subsetList ol li a:hover {
+          color: #b4854c; }
+          .main section .subsetList ol li a:hover time {
+            color: #333; }
+      .main section .subsetList ol li span.current {
+        color: #b4854c; }
+    .main section .pageJump .jumps {
+      text-decoration: none; }
+    .main section .pageJump a.jumps {
+      color: #333; }
+      .main section .pageJump a.jumps:hover {
+        color: #b4854c;
+        text-decoration: underline; }
+    .main section .pageJump a.jumps.toPrev:hover,
+    .main section .pageJump a.jumps.toNext:hover {
+      text-decoration: none; }
+    .main section .pageJump span.jumps.current {
+      color: #b4854c; }
+    .main section .thumbSubsetList h3 {
+      font-weight: normal; }
+    .main section .thumbSubsetList ol li figure a.frame:hover span.frameBroder.video,
+    .main section .thumbSubsetList ol li figure span.frame:hover span.frameBroder.video,
+    .main section .thumbSubsetList ul li figure a.frame:hover span.frameBroder.video,
+    .main section .thumbSubsetList ul li figure span.frame:hover span.frameBroder.video {
+      background-color: rgba(0, 0, 0, 0.1); }
+    .main section .thumbSubsetList ol li figure a.frame img.preload ~ span.frameBroder,
+    .main section .thumbSubsetList ol li figure span.frame img.preload ~ span.frameBroder,
+    .main section .thumbSubsetList ul li figure a.frame img.preload ~ span.frameBroder,
+    .main section .thumbSubsetList ul li figure span.frame img.preload ~ span.frameBroder {
+      background-color: #fff;
+      background-image: url("../images/ajax-loader.gif");
+      background-position: center center;
+      background-repeat: no-repeat; }
+    .main section .thumbSubsetList ol li figure a.frame img.preload ~ span.frameBroder.video,
+    .main section .thumbSubsetList ol li figure span.frame img.preload ~ span.frameBroder.video,
+    .main section .thumbSubsetList ul li figure a.frame img.preload ~ span.frameBroder.video,
+    .main section .thumbSubsetList ul li figure span.frame img.preload ~ span.frameBroder.video {
+      background-image: none; }
+    .main section .thumbSubsetList ol li figure span.frameBroder,
+    .main section .thumbSubsetList ul li figure span.frameBroder {
+      border: #b4854c solid 1px; }
+    .main section .thumbSubsetList ol li figure span.frameBroder.video,
+    .main section .thumbSubsetList ul li figure span.frameBroder.video {
+      background-color: rgba(0, 0, 0, 0.45);
+      background-repeat: no-repeat;
+      background-image: url("../images/video_play.png"); }
+    .main section .thumbSubsetList ol li figure figcaption a,
+    .main section .thumbSubsetList ol li figure figcaption span,
+    .main section .thumbSubsetList ul li figure figcaption a,
+    .main section .thumbSubsetList ul li figure figcaption span {
+      color: #333; }
+    .main section .thumbSubsetList ol li figure figcaption a,
+    .main section .thumbSubsetList ul li figure figcaption a {
+      text-decoration: none; }
+      .main section .thumbSubsetList ol li figure figcaption a:hover,
+      .main section .thumbSubsetList ul li figure figcaption a:hover {
+        color: #b4854c; }
+  .main footer {
+    text-align: center;
+    background-color: #181818; }
+    .main footer address {
+      text-align: center;
+      font-style: normal; }
+    .main footer .cprs {
+      text-align: center; }
+    .main footer * {
+      color: #ffffff; }
+
+@charset "UTF-8";
+/* Create with Gulp + SCSS on windows */
+/* ... Pu Yi Yuan 法雨山普宜苑官方網站 ... */
+/*
+@media (orientation:portrait){}
+@media (orientation:landscape){}
+*/
+@media (max-width: 767.98px) {
+  .main {
+    /* 網頁限制寬度並置中的容器 begin */
+    /* 網頁限制寬度並置中的容器 end */
+    /* 表頭,選單,大標 begin */
+    /* 表頭,選單,大標 end */
+    /* 網站內容段落 begin */
+    /* 網站內容段落 end */
+    /* 網站主選單 begin */
+    /* 網站主選單 end */
+    /* 網站麵包屑 begin */
+    /* 網站麵包屑 end */
+    /* 網頁內容右側欄 begin */
+    /* 網頁內容右側欄 end */
+    /* 網頁內容元件 begin */
+    /* 網頁內容元件 end */ }
+    .main nav.siteMenu ul.openMenu {
+      background-color: #fff; }
+      .main nav.siteMenu ul.openMenu li {
+        border-bottom: #e8e8e8 solid 2px; }
+        .main nav.siteMenu ul.openMenu li:last-child {
+          border-bottom: none; }
+        .main nav.siteMenu ul.openMenu li a {
+          color: #333;
+          text-align: left; }
+    .main nav.siteMenu li {
+      border-right: none; }
+      .main nav.siteMenu li:last-child {
+        border-right: none; }
+    .main nav.siteMenu .menuIOBtn {
+      color: #333;
+      background-color: #d8d8d8; }
+      .main nav.siteMenu .menuIOBtn.closeMenu {
+        background-color: #d8d8d8;
+        text-align: right; }
+    .main nav.siteMenu .menuCover.openMenu {
+      background-color: rgba(0, 0, 0, 0.55); }
+    .main dl.contentBlock dt.title .mobileSideOption ul {
+      background-color: rgba(255, 255, 255, 0.9); }
+      .main dl.contentBlock dt.title .mobileSideOption ul li {
+        border-bottom: #e8e8e8 solid 1px; }
+        .main dl.contentBlock dt.title .mobileSideOption ul li:last-child {
+          border-bottom: none; }
+        .main dl.contentBlock dt.title .mobileSideOption ul li a {
+          color: #333;
+          text-decoration: none; }
+    .main section {
+      /* 分頁清單 begin */
+      /* 分頁清單 end */
+      /* 圖片式分項清單 begin */
+      /* 圖片式分項清單 end */ } }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .main {
+    /* 網頁限制寬度並置中的容器 begin */
+    /* 網頁限制寬度並置中的容器 end */
+    /* 表頭,選單,大標 begin */
+    /* 表頭,選單,大標 end */
+    /* 網站內容段落 begin */
+    /* 網站內容段落 end */
+    /* 網站主選單 begin */
+    /* 網站主選單 end */
+    /* 網站麵包屑 begin */
+    /* 網站麵包屑 end */
+    /* 網頁內容左側欄 begin */
+    /* 網頁內容左側欄 end */
+    /* 網頁內容元件 begin */
+    /* 網頁內容元件 end */ }
+    .main aside.sideOptions {
+      /* 單元項目選單 begin */
+      /* 單元項目選單 end */ }
+    .main section {
+      /* 圖片式分項清單 begin */
+      /* 圖片式分項清單 end */ } }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../webfonts/fonts/icomoon.eot?awr9ed");
+  src: url("../webfonts/fonts/icomoon.eot?awr9ed#iefix") format("embedded-opentype"), url("../webfonts/fonts/icomoon.ttf?awr9ed") format("truetype"), url("../webfonts/fonts//icomoon.woff?awr9ed") format("woff"), url("../webfonts/fonts//icomoon.svg?awr9ed#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-chevron-left:before {
+  content: "\e900"; }
+
+.icon-chevron-right:before {
+  content: "\e901"; }
+
+.icon-triangle-down:before {
+  content: "\e902"; }
+
+.icon-triangle-up:before {
+  content: "\e903"; }
+
+.icon-circle-with-cross:before {
+  content: "\e904"; }
+
+.icon-cross:before {
+  content: "\e905"; }
+
+.icon-menu:before {
+  content: "\e906"; }

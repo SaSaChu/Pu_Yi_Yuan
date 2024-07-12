@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* Create with Gulp + SCSS on windows */
+/* ... Pu Yi Yuan 法雨山普宜苑官方網站 ... */
+@import '_mixins.scss';
+/*
+@media (orientation:portrait){}
+@media (orientation:landscape){}
+*/
+// Extra small devices (portrait phones, less than 768px)
+@media (max-width: 767.98px) {
+
+.main{
+	footer{
+		
+		text-align: center;
+		background-color: rgba(255,255,255,0.6);
+		color: #000;
+		.box{
+			
+			*{
+				text-align: center;
+			}
+		}
+		.cprs{
+			text-align: center;
+		}
+	}
+}
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+.main{
+
+}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}

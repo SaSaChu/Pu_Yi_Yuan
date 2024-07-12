@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* Create with Gulp + SCSS on windows */
+/* ... Pu Yi Yuan 法雨山普宜苑官方網站 ... */
+@import '_mixins.scss';
+@import '_extends.scss';
+$goldColor:#b4854c;
+/* fancybox 複寫 begin */
+.fancybox-slide--image .fancybox-content{
+	
+}
+.fancybox-image {
+	
+}
+.fancybox-caption{
+	bottom: auto;
+	top: 0;
+	background: none;
+	pointer-events:none;
+	*{
+		pointer-events:none;
+	}
+}
+.fancybox-caption__body{/*擴充的說明標題*/
+	.childTitle{
+		@extend %mutualFont;
+		@extend %textOverflow;
+		@include fontSize("14pt");
+		
+	}
+	.child{
+		@extend %mutualFont;
+		@extend %textOverflow;
+		@include fontSize("22pt");
+		display: block;
+		
+	}
+}
+.extendCloseFancyboxBtn{/*擴充的關閉按鈕*/
+	@include roundBorder(40px);
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	width: 40px;
+	height: 40px;
+	padding: 0;
+	margin: 0;
+	line-height: 40px;
+	font-size: 30px;
+	z-index: 10;
+	cursor: pointer;
+}
+// Extra small devices (portrait phones, less than 768px)
+@media (max-width: 767.98px) {
+.fancybox-slide--image .fancybox-content{
+	border: none;
+}
+.fancybox-caption{
+	bottom: auto;
+	top: 10%;
+	
+}
+.extendCloseFancyboxBtn{
+	@include roundBorder(30px);
+	top: 5px;
+	right: 5px;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 20px;
+}
+
+}
+/* fancybox 複寫 end */

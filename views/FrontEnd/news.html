@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<!-- #include file="/views/FrontEnd/viewport.inc" -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- #include file="/views/FrontEnd/mutual_meta.inc" -->
+<title>法雨山普宜苑</title>
+<!-- mutual JS and CSS begin -->
+<!-- #include file="/views/FrontEnd/mutual_js_css.inc" note="
+vendor.merge.js 內含
+FxUtility19/FxUtility19.beta.js 齊力樂門自用JS lib
+jquery/jquery.js jquery 核心檔v3.4.1
+sweetalert/sweetalert.min.js https://sweetalert.js.org/guides/
+" -->
+<!-- mutual JS and CSS end -->
+<!-- current page JS and CSS begin -->
+
+<!-- current page JS and CSS end -->
+</head>
+
+<body>
+<!-- #include file="/views/FrontEnd/ping.inc" -->
+<div class="main">
+	<div class="wrapper">
+        <!-- 表頭,選單,大標 begin -->
+        <article class="pageTop">
+<!-- #include file="/views/FrontEnd/header_site_title.inc" -->
+<!-- #include file="/views/FrontEnd/header_site_menu.inc" -->
+            <img class="banner" src="/assets_front/images/banner002.jpg"><!-- 單元網頁主圖Banner -->
+        </article>
+        <!-- 表頭,選單,大標 end -->
+        
+        <!-- 網站麵包屑 begin -->
+        <nav class="breadCrumb">
+        	<ul>
+            	<li><a href="javascript:;">首頁</a></li>
+                <li><a href="javascript:;">最新消息</a></li><!-- 單元名稱 -->
+                <li><span>108 與您道上有約</span></li><!-- 網頁名稱,所在頁面無連結 -->
+            </ul>
+        </nav>
+        <!-- 網站麵包屑 end -->
+        
+        <!-- 網頁主要內容 begin -->
+        <section class="pageCtx">
+        	<!-- 左側欄 begin -->
+        	<aside class="sideOptions">
+<!-- #include file="/views/FrontEnd/page_left_decoration.inc" note="裝飾圖樣" -->
+
+                <!-- 單元項目選單 begin -->
+                <nav class="contentMenu">
+                	<h3>
+                        <span>最新消息</span>
+                    </h3>
+                    <ul>
+                        <li><span title="108年與您道上有約" class="current">108年與您道上有約</span></li><!-- 所在頁面無連結 -->
+                        <li><a href="javascript:alert('link');" title="108 活動訊息">108 活動訊息</a></li>
+                        <li><a href="javascript:alert('link');" title="107 活動訊息">107 活動訊息</a></li>
+                        <li><a href="javascript:alert('link');" title="106 活動訊息">106 活動訊息</a></li>
+                        <li><a href="javascript:alert('link');" title="105 活動訊息">105 活動訊息</a></li>
+                        <li><a href="javascript:alert('link');" title="105 與您道上有約">108oasujdoasuoidaosjdoasdoisajdioasjoisjo</a></li>
+                    </ul>
+                </nav>
+                <!-- 單元項目選單 end -->
+            </aside>
+            <!-- 左側欄 end -->
+            
+            <!-- 內容欄 begin -->
+            <dl class="contentBlock">
+            	<dt class="title">
+                	<span class="unit">最新消息</span><!-- 單元名稱 -->
+                    <span>：</span>
+                    <span class="page">108年與您道上有約</span><!-- 網頁名稱 -->
+                    <div class="ink"></div>
+                    <!-- 只有手機有作用的單元內網頁選單 begin -->
+<!-- #include file="/views/FrontEnd/mobile_page_switch.inc" -->
+                    <!-- 只有手機有作用的單元內網頁選單 end -->
+                </dt>
+                <dd>
+                	<!-- 最新消息圖框 begin -->
+<!-- #include file="/views/FrontEnd/news_poster_box.inc" -->
+                    <!-- 最新消息圖框 end -->
+                    
+                    <!-- 最新消息分項清單 , 5筆分一頁 begin -->
+                    <div class="subsetList">
+                        <ol>
+                            <li><a href="javascript:;" title="2019/04/02 Intel 10 代 Core 筆記型電腦平台再添八款 14nm Comet Lake ，為主流輕薄筆電提供最高 6 核心的純性能處理器"><time datetime="2019-04-02">2019/04/02</time>Intel 10 代 Core 筆記型電腦平台再添八款 14nm Comet Lake ，為主流輕薄筆電提供最高 6 核心的純性能處理器</a></li>
+                            <li><a href="javascript:;" title="2019/04/02 LINE新版介面開放更新 好友、官方帳號清楚區分 Android版本率先推出"><time datetime="2019-04-02">2019/04/02</time>LINE新版介面開放更新 好友、官方帳號清楚區分 Android版本率先推出</a></li>
+                            <li><a href="javascript:;" title="2019/04/02 Steam推出中國專屬獨立服務「蒸汽平台」"><time datetime="2019-04-02">2019/04/02</time>Steam推出中國專屬獨立服務「蒸汽平台」</a></li>
+                            <li><a href="javascript:;" title="2019/04/02 Sony A7R IV 數位麥克風"><time datetime="2019-04-02">2019/04/02</time>Sony A7R IV 數位麥克風</a></li>
+                            <li><a href="javascript:;" title="2019/04/02 Sony 微軟釋出Chromium架構的新Edge瀏覽器beta測試版本 未來將持續降低CPU與記憶體資源佔用"><time datetime="2019-04-02">2019/04/02</time>微軟釋出Chromium架構的新Edge瀏覽器beta測試版本 未來將持續降低CPU與記憶體資源佔用</a></li>
+                        </ol>
+                    </div>
+                    <!-- 最新消息分項清單 end -->
+                    
+                    <!-- 分頁清單 , 一次最多列出5 頁 begin -->
+<!-- #include file="/views/FrontEnd/page_jump_links.inc" -->
+                    <!-- 分頁清單 end -->
+                	
+                </dd>
+            </dl>
+            <br class="clearFloat">
+            <!-- 內容欄 end -->
+            
+        </section>
+        <!-- 網頁主要內容 end -->
+        
+        <!-- 頁腳,版權宣告 begin -->
+<!-- #include file="/views/FrontEnd/site_footer_cprs.inc" -->
+        <!-- 頁腳,版權宣告 end -->
+    </div>
+	
+</div>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/* Create with Gulp + SCSS on windows */
+/* ... Pu Yi Yuan 法雨山普宜苑官方網站 ... */
+/*
+@media (orientation:portrait){}
+@media (orientation:landscape){}
+*/
+@media (max-width: 767.98px) {
+  .main {
+    /* 網頁限制寬度並置中的容器 begin */
+    /* 網頁限制寬度並置中的容器 end */
+    /* 表頭,選單,大標 begin */
+    /* 表頭,選單,大標 end */
+    /* 網站內容段落 begin */
+    /* 網站內容段落 end */
+    /* 網站主選單 begin */
+    /* 網站主選單 end */
+    /* 網站麵包屑 begin */
+    /* 網站麵包屑 end */
+    /* 網頁內容右側欄 begin */
+    /* 網頁內容右側欄 end */
+    /* 網頁內容元件 begin */
+    /* 網頁內容元件 end */ }
+    .main nav.siteMenu ul.openMenu {
+      background-color: #fff; }
+      .main nav.siteMenu ul.openMenu li {
+        border-bottom: #e8e8e8 solid 2px; }
+        .main nav.siteMenu ul.openMenu li:last-child {
+          border-bottom: none; }
+        .main nav.siteMenu ul.openMenu li a {
+          color: #333;
+          text-align: left; }
+    .main nav.siteMenu li {
+      border-right: none; }
+      .main nav.siteMenu li:last-child {
+        border-right: none; }
+    .main nav.siteMenu .menuIOBtn {
+      color: #333;
+      background-color: #d8d8d8; }
+      .main nav.siteMenu .menuIOBtn.closeMenu {
+        background-color: #d8d8d8;
+        text-align: right; }
+    .main nav.siteMenu .menuCover.openMenu {
+      background-color: rgba(0, 0, 0, 0.55); }
+    .main dl.contentBlock dt.title .mobileSideOption ul {
+      background-color: rgba(255, 255, 255, 0.9); }
+      .main dl.contentBlock dt.title .mobileSideOption ul li {
+        border-bottom: #e8e8e8 solid 1px; }
+        .main dl.contentBlock dt.title .mobileSideOption ul li:last-child {
+          border-bottom: none; }
+        .main dl.contentBlock dt.title .mobileSideOption ul li a {
+          color: #333;
+          text-decoration: none; }
+    .main section {
+      /* 分頁清單 begin */
+      /* 分頁清單 end */
+      /* 圖片式分項清單 begin */
+      /* 圖片式分項清單 end */ } }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .main {
+    /* 網頁限制寬度並置中的容器 begin */
+    /* 網頁限制寬度並置中的容器 end */
+    /* 表頭,選單,大標 begin */
+    /* 表頭,選單,大標 end */
+    /* 網站內容段落 begin */
+    /* 網站內容段落 end */
+    /* 網站主選單 begin */
+    /* 網站主選單 end */
+    /* 網站麵包屑 begin */
+    /* 網站麵包屑 end */
+    /* 網頁內容左側欄 begin */
+    /* 網頁內容左側欄 end */
+    /* 網頁內容元件 begin */
+    /* 網頁內容元件 end */ }
+    .main aside.sideOptions {
+      /* 單元項目選單 begin */
+      /* 單元項目選單 end */ }
+    .main section {
+      /* 圖片式分項清單 begin */
+      /* 圖片式分項清單 end */ } }

@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* Create with Gulp + SCSS on windows */
+/* ... Pu Yi Yuan 法雨山普宜苑官方網站 ... */
+@import '_mixins.scss';
+@import '_extends.scss';
+$goldColor:#b4854c;
+/* fancybox 複寫 begin */
+.fancybox-slide--image .fancybox-content{
+	border: $goldColor solid 2px;
+}
+.fancybox-image {
+	
+}
+.fancybox-caption{
+	*{
+	}
+}
+.fancybox-caption__body{/*擴充的說明標題*/
+	.childTitle{
+		text-align: left;
+	}
+	.child{
+		text-align: left;
+	}
+}
+.extendCloseFancyboxBtn{/*擴充的關閉按鈕*/
+	border: $goldColor solid 3px;
+	background-color: #fff;
+	color: $goldColor;
+}
+// Extra small devices (portrait phones, less than 768px)
+@media (max-width: 767.98px) {
+.fancybox-slide--image .fancybox-content{
+}
+.fancybox-caption{
+	
+}
+.extendCloseFancyboxBtn{
+}
+
+}
+/* fancybox 複寫 end */

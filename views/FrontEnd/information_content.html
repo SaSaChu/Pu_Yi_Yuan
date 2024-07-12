@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<!-- #include file="/views/FrontEnd/viewport.inc" -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- #include file="/views/FrontEnd/mutual_meta.inc" -->
+<title>法雨山普宜苑</title>
+<!-- mutual JS and CSS begin -->
+<!-- #include file="/views/FrontEnd/mutual_js_css.inc" note="
+vendor.merge.js 內含
+FxUtility19/FxUtility19.beta.js 齊力樂門自用JS lib
+jquery/jquery.js jquery 核心檔v3.4.1
+sweetalert/sweetalert.min.js https://sweetalert.js.org/guides/
+" -->
+<!-- mutual JS and CSS end -->
+<!-- current page JS and CSS begin -->
+
+<!-- current page JS and CSS end -->
+</head>
+
+<body>
+<!-- #include file="/views/FrontEnd/ping.inc" -->
+<div class="main">
+	<div class="wrapper">
+        <!-- 表頭,選單,大標 begin -->
+        <article class="pageTop">
+<!-- #include file="/views/FrontEnd/header_site_title.inc" -->
+<!-- #include file="/views/FrontEnd/header_site_menu.inc" -->
+            <img class="banner" src="/assets_front/images/banner004.jpg"><!-- 單元網頁主圖Banner -->
+        </article>
+        <!-- 表頭,選單,大標 end -->
+        
+        <!-- 網站麵包屑 begin -->
+        <nav class="breadCrumb">
+        	<ul>
+            	<li><a href="javascript:;">首頁</a></li>
+                <li><a href="javascript:;">法語園地</a></li><!-- 單元名稱 -->
+                <li><a href="javascript:;">修行隨筆</a></li><!-- 單元名稱 -->
+                <li><span>LINE新版介面開放更新 好友、官方帳號清楚區分 Android版本率先推出</span></li><!-- 網頁名稱,所在頁面無連結 -->
+            </ul>
+        </nav>
+        <!-- 網站麵包屑 end -->
+        
+        <!-- 網頁主要內容 begin -->
+        <section class="pageCtx">
+        	<!-- 左側欄 begin -->
+        	<aside class="sideOptions">
+<!-- #include file="/views/FrontEnd/page_left_decoration.inc" note="裝飾圖樣" -->
+
+                <!-- 單元項目選單 begin -->
+                <nav class="contentMenu">
+                	<h3>
+                        <span>法語園地</span>
+                    </h3>
+                    <ul>
+                        <li><span title="修行隨筆" class="current">修行隨筆</span></li><!-- 所在頁面無連結 -->
+                        <li><a href="javascript:alert('link');" title="法語集錦">法語集錦</a></li>
+                        <li><a href="javascript:alert('link');" title="無處不是道">無處不是道</a></li>
+                        <li><a href="javascript:alert('link');" title="師父的開示">師父的開示</a></li>
+                        <li><a href="javascript:alert('link');" title="105 活動訊息">好文大家讀</a></li>
+                    </ul>
+                </nav>
+                <!-- 單元項目選單 end -->
+            </aside>
+            <!-- 左側欄 end -->
+            
+            <!-- 內容欄 begin -->
+            <dl class="contentBlock">
+            	<dt class="title">
+                	<span class="unit">法語園地</span><!-- 單元名稱 -->
+                    <span>：</span>
+                    <span class="page">修行隨筆</span><!-- 網頁內容的所屬項目名稱 -->
+                    <div class="ink"></div>
+                    <!-- 只有手機有作用的單元內網頁選單 begin -->
+<!-- #include file="/views/FrontEnd/mobile_page_switch.inc" -->
+                    <!-- 只有手機有作用的單元內網頁選單 end -->
+                </dt>
+                <dd>
+                	<h4 class="dateTime"><time datetime="2019-04-02">2019/04/02</time></h4>
+                    <h2 class="contentTitle">LINE新版介面開放更新 好友、官方帳號清楚區分 Android版本率先推出</h2><!-- 網頁內容標題 -->
+                    
+                    <div class="ckx">
+                    	<!-- class="ckx" 表示其內用來放置透過CK Editor 產生的HTML 內容 -->
+<!-- #include file="/views/FrontEnd/ck_editor_content_sample_1.inc" note="CK Editor 產出內容範本" -->
+<!-- #include file="/views/FrontEnd/ck_editor_content_sample_2.inc" note="CK Editor 產出內容範本" -->
+                    </div>
+                    <div class="backPrev"><i class="icon-chevron-left"></i><a href="javascript:alert('實體URL , 不要用history');">回上一頁</a></div>
+                    <hr class="withShadow">
+                    
+                    <!-- 最新消息分項清單 , 5筆分一頁 begin -->
+<!-- #include file="/views/FrontEnd/news_subset_list.inc" -->
+                    <!-- 最新消息分項清單 end -->
+                    
+                    <!-- 分頁清單 , 一次最多列出5 頁 begin -->
+<!-- #include file="/views/FrontEnd/page_jump_links.inc" -->
+                    <!-- 分頁清單 end -->
+                	
+                </dd>
+            </dl>
+            <br class="clearFloat">
+            <!-- 內容欄 end -->
+            
+        </section>
+        <!-- 網頁主要內容 end -->
+        
+        <!-- 頁腳,版權宣告 begin -->
+<!-- #include file="/views/FrontEnd/site_footer_cprs.inc" -->
+        <!-- 頁腳,版權宣告 end -->
+    </div>
+	
+</div>
+
+</body>
+</html>

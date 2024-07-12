@@ -1,0 +1,1 @@
+DDK.Index={init:function(){var a=$(".slickBox .slickPlugin"),e={arrows:!1,autoplay:Boolean(Number(a.attr("data-autoplay"))),autoplaySpeed:Number(a.attr("data-interval")),adaptiveHeight:!0,slidesToShow:1,swipe:!1,fade:!0,responsive:[]};a.slick(e)}},$(document).ready(function(){DDK.Index.init()});

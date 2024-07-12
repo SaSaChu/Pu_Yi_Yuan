@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/* Create with Gulp + SCSS on windows */
+/* ... Pu Yi Yuan 法雨山普宜苑官方網站 ... */
+.main {
+  /* 網頁限制寬度並置中的容器 begin */
+  /* 網頁限制寬度並置中的容器 end */
+  /* slick 外掛作出的首頁輪撥主圖 begin */
+  /* slick 外掛作出的首頁輪撥主圖 end */
+  /* 類image map 選單 begin */
+  /* 類image map 選單 end */ }
+  .main > div.wrapper {
+    background: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+  .main .slickBox .mask {
+    /*遮照*/ }
+  .main .mapedMenu ul {
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-image: url("../images/nav.png"); }
+    .main .mapedMenu ul li a:hover:before {
+      background-repeat: no-repeat;
+      background-position: 10px center;
+      background-image: url("../images/hover.png"); }
+  .main .mapedMenu .FBpage {
+    background-size: contain;
+    background-image: url("../images/facebook.png"); }
+  .main footer {
+    background: none;
+    text-align: right; }
+    .main footer address,
+    .main footer .cprs {
+      text-align: right; }
+    .main footer * {
+      color: #333; }

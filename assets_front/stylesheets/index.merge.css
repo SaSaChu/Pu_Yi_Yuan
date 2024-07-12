@@ -1,0 +1,270 @@
+@charset "UTF-8";
+/* Create with Gulp + SCSS on windows */
+/* ... Pu Yi Yuan 法雨山普宜苑官方網站 ... */
+.main > div.wrapper, .main .slickBox, .main .slickBox .slickCover,
+.main .slickBox .slickPlugin,
+.main .slickBox .slickPlugin .ctx,
+.main .slickBox .mask {
+  width: 1086px;
+  height: 637px; }
+
+
+.main .slickBox .mask,
+.main .slickBox .slickPlugin .ctx {
+  /*右上右下圓角*/
+  -webkit-border-top-right-radius: 20px;
+  -webkit-border-bottom-right-radius: 20px;
+  -moz-border-radius-topright: 20px;
+  -moz-border-radius-bottomright: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  /*右上右下圓角*/
+  /*左上左下圓角*/
+  -webkit-border-top-left-radius: 318px;
+  -webkit-border-bottom-left-radius: 318px;
+  -moz-border-radius-topleft: 318px;
+  -moz-border-radius-bottomleft: 318px;
+  border-top-left-radius: 318px;
+  border-bottom-left-radius: 318px;
+  /*左上左下圓角*/ }
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  /* 網頁限制寬度並置中的容器 begin */
+  /* 網頁限制寬度並置中的容器 end */
+  /* slick 外掛作出的首頁輪撥主圖 begin */
+  /* slick 外掛作出的首頁輪撥主圖 end */
+  /* 類image map 選單 begin */
+  /* 類image map 選單 end */ }
+  .main > div.wrapper {
+    display: block;
+    position: relative;
+    width: 1086px;
+    max-width: 100vw;
+    height: 745px;
+    overflow: hidden;
+    top: 30%;
+    transform: translateY(-30%); }
+    .main > div.wrapper:before {
+      display: none; }
+  .main .slickBox {
+    position: relative; }
+    .main .slickBox figure {
+      margin: 0;
+      padding: 0; }
+    .main .slickBox .mask,
+    .main .slickBox .slickCover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0; }
+    .main .slickBox .slickCover {
+      z-index: 2;
+      height: 689px;
+      /*複寫高度*/ }
+    .main .slickBox .mask {
+      /*遮照*/
+      overflow: hidden;
+      z-index: 1; }
+    .main .slickBox .slickPlugin .ctx {
+      overflow: hidden; }
+      .main .slickBox .slickPlugin .ctx figure {
+        float: right; }
+  .main .mapedMenu,
+  .main .FBpage,
+  .main header,
+  .main footer {
+    position: absolute;
+    z-index: 3; }
+  .main .mapedMenu {
+    top: 360px;
+    left: 40px;
+    width: 120px;
+    height: 177px; }
+    .main .mapedMenu ul {
+      display: block;
+      width: inherit;
+      height: inherit; }
+      .main .mapedMenu ul li {
+        position: absolute;
+        height: 17px; }
+        .main .mapedMenu ul li a {
+          display: block;
+          width: inherit;
+          height: inherit;
+          position: relative; }
+          .main .mapedMenu ul li a:hover:before {
+            position: absolute;
+            right: 0;
+            bottom: -6px;
+            width: 74px;
+            height: 6px;
+            content: ' '; }
+      .main .mapedMenu ul li.area1 {
+        top: 0;
+        left: 0;
+        width: 112px; }
+      .main .mapedMenu ul li.area2 {
+        top: 40px;
+        left: 8px;
+        width: 94px; }
+      .main .mapedMenu ul li.area3 {
+        top: 81px;
+        left: 18px;
+        width: 94px; }
+      .main .mapedMenu ul li.area4 {
+        top: 121px;
+        left: 28px;
+        width: 92px; }
+      .main .mapedMenu ul li.area5 {
+        top: 160px;
+        left: 50px;
+        width: 70px; }
+    .main .mapedMenu .FBpage {
+      top: 188px;
+      left: 133px;
+      width: 53px;
+      height: 53px; }
+  .main header {
+    top: 170px;
+    width: 141px; }
+    .main header .siteLogo {
+      display: inline-block; }
+  .main footer {
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    padding-right: 15px; }
+
+.slick-initialized .slick-slide {
+  z-index: 1 !important; }
+
+@charset "UTF-8";
+/* Create with Gulp + SCSS on windows */
+/* ... Pu Yi Yuan 法雨山普宜苑官方網站 ... */
+/*
+@media (orientation:portrait){}
+@media (orientation:landscape){}
+*/
+@media (max-width: 767.98px) {
+  .main > div.wrapper {
+    width: inherit;
+    height: 100vh;
+    overflow: hidden;
+    top: 0;
+    transform: none;
+    margin: 0; }
+  .main .slickBox,
+  .main .mapedMenu,
+  .main .FBpage,
+  .main header {
+    transform: none; }
+  .main .slickBox {
+    margin-top: -17vh;
+    margin-left: 0; }
+  .main .mapedMenu {
+    top: calc(360px - 23vh);
+    left: calc(40px - 30px); }
+  .main header {
+    top: 52vh;
+    left: 61vw; }
+  .main footer {
+    padding-right: 0; }
+    .main footer .box {
+      padding: 1rem 0; } }
+
+@media (max-width: 767.98px) and (orientation: landscape) {
+  .main .slickBox {
+    margin-top: -25vh;
+    margin-left: 0; }
+  .main .mapedMenu {
+    top: 36vh;
+    left: calc(40px - 30px); }
+    .main .mapedMenu .FBpage {
+      top: -73px;
+      left: 70px; }
+  .main header {
+    top: 4vh;
+    left: auto;
+    right: 4vw; }
+  .main footer .box {
+    padding: 5px 0; } }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .main > div.wrapper {
+    width: inherit;
+    height: 80vh;
+    overflow: hidden;
+    margin: 0; }
+  .main .slickBox,
+  .main .mapedMenu,
+  .main .FBpage,
+  .main header {
+    transform: scale(1.15); }
+  .main .slickBox {
+    margin-top: 50px;
+    margin-left: 95px; }
+  .main footer {
+    bottom: 0;
+    left: 0;
+    right: auto;
+    width: 100%;
+    text-align: left; }
+    .main footer .box {
+      font-size: 93%; } }
+
+@charset "UTF-8";
+/* Create with Gulp + SCSS on windows */
+/* ... Pu Yi Yuan 法雨山普宜苑官方網站 ... */
+.main {
+  /* 網頁限制寬度並置中的容器 begin */
+  /* 網頁限制寬度並置中的容器 end */
+  /* slick 外掛作出的首頁輪撥主圖 begin */
+  /* slick 外掛作出的首頁輪撥主圖 end */
+  /* 類image map 選單 begin */
+  /* 類image map 選單 end */ }
+  .main > div.wrapper {
+    background: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+  .main .slickBox .mask {
+    /*遮照*/ }
+  .main .mapedMenu ul {
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-image: url("../images/nav.png"); }
+    .main .mapedMenu ul li a:hover:before {
+      background-repeat: no-repeat;
+      background-position: 10px center;
+      background-image: url("../images/hover.png"); }
+  .main .mapedMenu .FBpage {
+    background-size: contain;
+    background-image: url("../images/facebook.png"); }
+  .main footer {
+    background: none;
+    text-align: right; }
+    .main footer address,
+    .main footer .cprs {
+      text-align: right; }
+    .main footer * {
+      color: #333; }
+
+@charset "UTF-8";
+/* Create with Gulp + SCSS on windows */
+/* ... Pu Yi Yuan 法雨山普宜苑官方網站 ... */
+/*
+@media (orientation:portrait){}
+@media (orientation:landscape){}
+*/
+@media (max-width: 767.98px) {
+  .main footer {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #000; }
+    .main footer .box * {
+      text-align: center; }
+    .main footer .cprs {
+      text-align: center; } }

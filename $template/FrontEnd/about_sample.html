@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<!-- #include file="/$template/FrontEnd/viewport.inc" -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- #include file="/$template/FrontEnd/mutual_meta.inc" -->
+<title>法雨山普宜苑</title>
+<!-- mutual JS and CSS begin --><!-- build:SSI-remove -->
+<!-- 全站共用CSS 透過NPM GulpJS 發佈為[assets_front/stylesheets/mutual.merge.css]並置換載入標籤內容 begin -->
+<!-- <link rel="stylesheet" href="/assets_front/$stylesheets/bootstrap.css" note="Bootstrap core style" /> -->
+<link rel="stylesheet" href="/assets_front/$stylesheets/reset.css" note="Reset element basic style" />
+<link rel="stylesheet" href="/assets_front/$stylesheets/mutual_layout.css" note="框架" />
+<link rel="stylesheet" href="/assets_front/$stylesheets/mutual_rwd_layout.css" note="RWD 框架" />
+<link rel="stylesheet" href="/assets_front/$stylesheets/mutual_decoration.css" note="視覺樣式" />
+<link rel="stylesheet" href="/assets_front/$stylesheets/mutual_rwd_decoration.css" note="RWD 視覺樣式" />
+<link rel="stylesheet" href="/assets_front/$stylesheets/webfonts.css" note="Web Fonts for icons" />
+<!-- 全站共用CSS 透過NPM GulpJS 發佈為[assets_front/stylesheets/mutual.merge.css]並置換載入標籤內容 end -->
+
+<!-- 以上全站共用網路套件JS 透過NPM GulpJS 發佈為[assets_front/vendor/vendor.merge.js]並置換載入標籤內容 begin -->
+<script language="javascript" type="text/javascript" src="/assets_front/$vendor/FxUtility19/FxUtility19.beta.js"></script>
+<script language="javascript" type="text/javascript" src="/assets_front/$vendor/jquery/jquery.js" note="jOuery core v3.4.1"></script>
+<script language="javascript" type="text/javascript" src="/assets_front/$vendor/bootstrap/bootstrap.js" note="Bootstrap JS v4.3.1"></script>
+<script language="javascript" type="text/javascript" src="/assets_front/$vendor/sweetalert/sweetalert.min.js" note="SweetAlert JS v2.final"></script>
+<!-- 全站共用網路套件JS 透過NPM GulpJS 發佈為[assets_front/vendor/vendor.merge.js]並置換載入標籤內容 end -->
+
+<!-- 以上全站共用自訂開發JS 透過NPM GulpJS 發佈為[assets_front/javascripts/ddk.core.js]並置換載入標籤內容 begin -->
+<script language="javascript" type="text/javascript" src="/assets_front/$javascripts/ddk_core.js" note="Site Functions"></script>
+<script language="javascript" type="text/javascript" src="/assets_front/$javascripts/ddk_mutual.js" note="Site Functions"></script>
+<!-- 以全站共用自訂開發JS 透過NPM GulpJS 發佈為[assets_front/javascripts/ddk.core.js]並置換載入標籤內容 end --><!-- endbuild -->
+<!-- #include file="/$template/FrontEnd/mutual_js_css.inc" note="
+vendor.merge.js 內含
+FxUtility19/FxUtility19.beta.js 齊力樂門自用JS lib
+jquery/jquery.js jquery 核心檔v3.4.1
+sweetalert/sweetalert.min.js https://sweetalert.js.org/guides/
+" -->
+<!-- mutual JS and CSS end -->
+<!-- current page JS and CSS begin --><!-- build:SSI-remove -->
+<!-- 單頁CSS 與JS 載入標籤透過MPM GulpJS 移除 begin --><!--
+<link rel="stylesheet" href="/assets_front/$stylesheets/" note="框架" />
+<link rel="stylesheet" href="/assets_front/$stylesheets/" note="RWD 框架" />
+<link rel="stylesheet" href="/assets_front/$stylesheets/" note="視覺樣式" />
+<link rel="stylesheet" href="/assets_front/$stylesheets/" note="RWD 視覺樣式" />
+<script language="javascript" type="text/javascript" src="/assets_front/$javascripts/" note="Page Functions"></script> -->
+<!-- 單頁CSS 與JS 載入標籤透過MPM GulpJS 移除 end --><!-- endbuild -->
+<!-- build:currentCSS --><!-- 以上CSS 透過NPM GulpJS 發佈為[id + '.merge.css']並置換載入標籤內容 --><!-- endbuild --><!-- build:currentJS --><!-- 以上JS 透過NPM GulpJS 發佈為['ddk.' + id + '.js']並置換載入標籤內容 --><!-- endbuild -->
+<!-- current page JS and CSS end -->
+</head>
+
+<body>
+<!-- #include file="/$template/FrontEnd/ping.inc" -->
+<div class="main">
+	<div class="wrapper">
+        <!-- 表頭,選單,大標 begin -->
+        <article class="pageTop">
+<!-- #include file="/$template/FrontEnd/header_site_title.inc" -->
+<!-- #include file="/$template/FrontEnd/header_site_menu.inc" -->
+            <img class="banner" src="/assets_front/images/banner001.jpg"><!-- 單元網頁主圖Banner -->
+        </article>
+        <!-- 表頭,選單,大標 end -->
+        
+        <!-- 網站麵包屑 begin -->
+        <nav class="breadCrumb">
+        	<ul>
+            	<li><a href="javascript:;">首頁</a></li>
+                <li><a href="javascript:;">關於普宜苑</a></li><!-- 單元名稱 -->
+                <li><span>歷史沿革</span></li><!-- 網頁名稱,所在頁面無連結 -->
+            </ul>
+        </nav>
+        <!-- 網站麵包屑 end -->
+        
+        <!-- 網頁主要內容 begin -->
+        <section class="pageCtx">
+        	<!-- 左側欄 begin -->
+        	<aside class="sideOptions">
+<!-- #include file="/$template/FrontEnd/page_left_decoration.inc" note="裝飾圖樣" -->
+
+                <!-- 單元項目選單 begin -->
+                <nav class="contentMenu">
+                	<h3>
+                        <span>關於普宜苑</span>
+                    </h3>
+                    <ul>
+                        <li><a href="javascript:alert('link');" title="歷史沿革">歷史沿革</a></li>
+                        <li><a href="javascript:alert('link');" title="弘法、文教">弘法、文教</a></li>
+                        <li><span title="交通資訊" class="current">交通資訊</span></li><!-- 所在頁面無連結 -->
+                        <li><a href="javascript:alert('link');" title="普宜苑介紹">普宜苑介紹</a></li>
+                    </ul>
+                </nav>
+                <!-- 單元項目選單 end -->
+            </aside>
+            <!-- 左側欄 end -->
+            
+            <!-- 內容欄 begin -->
+            <dl class="contentBlock">
+            	<dt class="title">
+                	<span class="unit">關於普宜苑</span><!-- 單元名稱 -->
+                    <span>：</span>
+                    <span class="page">交通資訊</span><!-- 網頁名稱 -->
+                    <div class="ink"></div>
+                    <!-- 只有手機有作用的單元內網頁選單 begin -->
+<!-- #include file="/$template/FrontEnd/mobile_page_switch.inc" -->
+                    <!-- 只有手機有作用的單元內網頁選單 end -->
+                </dt>
+                <dd>
+<div class="ckx">(https://puyiyuan.funcode.win/about/175)
+          <p><span style="font-size: 16px; color: #b05720;"><strong>開車路線</strong></span></p>
+<p><span style="font-family: arial, helvetica, sans-serif;">國道1號圓山<span style="color: #00ff00;">交流道下 &rarr; 濱江街 &rarr; 大直橋 &rarr; 北安路 &rarr; 北安路圓環 &rarr; 北安路 &rarr; 自強隧道 &rarr; 自強</span>橋 &rarr; 故宮路 &rarr; 至善路2段 &rarr; 至善路3段 &rarr; 法雨山普宜苑。</span></p>
+<p>&nbsp;</p>
+<p><strong style="color: #b05720; font-size: 16px;">公車路線</strong></p>
+<p><span style="color: #ff0000; font-size: 16px;"><strong>小18</strong></span></p>
+<p><span style="font-size: 18px; color: #00ff00;"><span style="font-size: 16px;">行經路線</span></span></p>
+<p>1.捷運劍潭<span style="color: #00ff00;">站(基河) &rarr; 2.陽明戲院 &rarr; 3.小北街 &rarr; 4.士林區農會 &rarr; 5.捷</span>運士林站(中正) &rarr; 6.福林國小 &rarr; 7. 士林官邸(中正) &rarr; 8.泰北中學 &rarr; 9.雙溪公園 &rarr; 10.梅林新村 &rarr; 11.東吳大學(錢穆故居) &rarr; 12.外雙溪(至善) &rarr; 13.故宮博物院 &rarr; 14.衛理女中(原住民&hellip;) &rarr; 15.至善國中 &rarr; 16.雙溪別墅 &rarr; 17.劍南僑 &rarr; 18.大經橋 &rarr; 19.外雙溪橋 &rarr; 20.內雙溪橋 &rarr; 21. 至善路三段 &rarr; 22. 碧溪橋 &rarr; 23. 沙崙 &rarr;&nbsp;<strong><span style="font-size: 16px;"><span style="color: #ff0000;">24.礁坑橋(法雨山普宜苑)</span></span></strong></p>
+<div>&nbsp;</div>
+<div><span style="color: #00ff00;">本寺傳承臨濟宗、曹洞宗（尼眾道場</span>）.</div>
+<div>地址：111台北市士林區至善路3段181巷3號</div>
+<div>電話：02－28413393&nbsp;</div>
+        </div>
+
+<div class="ckx">(https://puyiyuan.funcode.win/about/169)
+          <div class="textarea">
+<p>　　<span style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;">法雨山普宜苑，座落於<span style="color: #00ff00;">台北市士林區，離故宮不遠的溪山里（內雙溪</span></span><span style="color: #00ff00;"><wbr style="font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.4px; line-height: 18px;" /></span><span style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;"><span style="color: #00ff00;">），青山環繞、</span>綠水潺潺；一年四季鳥語花香；民風純樸，村民熱心</span><wbr style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><span style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;">善良；鄰近市區、交通方便，如佛陀時代的靈鷲山，離王舍城路程不</span><wbr style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><span style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;">遠，純然是鬧中取靜的好地方 最適合尼僧團共住。山中常有綿綿細雨，如法雨繽紛，又以三根普被</span><wbr style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><span style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;">、貧富貴賤無分別之宗旨 故取名"法雨山普宜苑"。</span></p>
+<br style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><span style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;">法雨山普宜苑師承金龍禪寺第二代住持上禪下覺上人座下，上人為曹</span><wbr style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><wbr style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><wbr style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><wbr style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><wbr style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><wbr style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><wbr style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><wbr style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><wbr style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><wbr style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><wbr style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><wbr style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><wbr style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><span style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;">洞宗法光寺上如下學禪師之弟子、臨濟宗金龍禪寺上玄下信老和尚之</span><wbr style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><span style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;">法子，普宜苑傳承兩法脈，於民國七十六年，由照印等八位比丘尼，</span><wbr style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><span style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;">從金龍禪寺來此共同創立。草創之初，蓽路藍縷、四事無着、幾近斷</span><wbr style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><span style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;">炊，後以百丈精神自給自足、披荊斬棘， 白天勞務，晚上自修。</span><br style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><br style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><span style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;">更本著修行人弘法是家務，善巧方便帶領信眾，授八關齋 、念佛、禮懺共修、研讀佛學。又以學佛的孩子不變壞，不收費舉辦</span><wbr style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><span style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;">兒童學佛營、母親節感恩、敬老大型公益活動等等，因此空間不敷使</span><wbr style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><span style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;">用，於</span><span class="text_exposed_show" style="display: inline; color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;">民國七十八年開始申請重建。<br /><br />請照期間因山坡地及水源區的關係，困難重重，歷經十餘年，在僧俗<wbr />二眾同心協力排除萬難下，直至民國八十九年通過審核 終於領到建照。<br /><br />大殿工程動工，須要龐大的工程資金，但本著佛陀慈悲的精神，信眾<wbr />營生不易，以隨緣不化緣的原則，開源節流，又遇到建材上漲，經濟<wbr />不景氣，要完成建寺，經濟壓力、辛苦可見一般。<br /><br />民國九十五年大雄寶殿終於於<span style="color: #00ff00;">落成，隔年圖書館亦對外開放使用。大<wbr />殿落成後，第一代住持上照下印和尚尼，認為</span>階段性任務已完成，堅<wbr />持僧團的制度要轉動、僧伽教育要提昇、對信眾的法供養要具足，首<wbr />先推動，由常住眾選出住持、監院、教授尼，以三年為一任，於是在<wbr />照印和尚尼不被選之下，於隔年（九十六年）選出第一任住持 上照下乘法師等三大職事，領導兩序大眾，安心辦道。僧團制度正式<wbr />啟動 代表了人治時代的結束，普宜苑僧團制度新的紀元開始。<br /><br />本苑以叢林規律生活、安僧辦道、培育僧才、宏法利生為宗旨，並研<wbr />習戒律 、結夏安居、常住尼眾分批送往研究所或佛學院就讀，並定期舉辦八<wbr />關齋戒、每月固定一日念佛、禮懺共修會及講經、恭請大德法師授課<wbr />：如阿含、中論、如來藏及律學的研讀，使信眾能懺摩、用功、聽聞<wbr />正法；圖書管提供豐富的圖書、幽靜的閱讀空間；提供國中、國小學<wbr />生的語文加強學習等等。法雨山普宜苑秉持大乘佛法的精神，希望做<wbr />更好的法施 財施 無畏施 饒益一切眾生。</span><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />
+<p>&nbsp;</p>
+</div>
+        </div>
+        
+<div class="ckx">(https://puyiyuan.funcode.win/about/172)
+          <p>　　共修法會外，定期舉辦八關齋戒，研習戒律，恭請大德法師授課，<span style="color: #00ff00;">成立圖書館，開放社會大眾入館閱覽使用</span>。</p>
+        </div>
+        
+<div class="ckx">(https://puyiyuan.funcode.win/about/184)
+          <p><span style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;">法雨山普宜苑，<span style="color: #00ff00;">座落於台北市士林區，離故宮不遠的溪山里（內雙溪</span></span><span style="color: #00ff00;"><wbr style="font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.4px; line-height: 18px;" /></span><span style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;"><span style="color: #00ff00;">），青山環繞、綠水潺潺</span>；一年四季鳥語花香；民風純樸，村民熱心</span><wbr style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><span style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;">善良；鄰近市區、交通方便，如佛陀時代的靈鷲山，離王舍城路程不</span><wbr style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><span style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;">遠，純然是鬧中取靜的好地方 最適合尼僧團共住。山中常有綿綿細雨，如法雨繽紛，又以三根普被</span><wbr style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><span style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;">、貧富貴賤無分別之宗旨 故取名"法雨山普宜苑"。</span><br style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><br style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><span style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;">法雨山普宜苑師承金龍禪寺第二代住持上禪下覺上人座下，上人為曹</span><wbr style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><span style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;">洞宗法光寺上如下學禪師之弟子、臨濟宗金龍禪寺上玄下信老和尚之</span><wbr style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><span style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;">法子，普宜苑傳承兩法脈，於民國七十六年，由照印等八位比丘尼，</span><wbr style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><span style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;">從金龍禪寺來此共同創立。草創之初，蓽路藍縷、四事無着、幾近斷</span><wbr style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><span style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;">炊，後以百丈精神自給自足、披荊斬棘， 白天勞務，晚上自修。</span><br style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><br style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><span style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;">更本著修行人弘法是家務，善巧方便帶領信眾，授八關齋 、念佛、禮懺共修、研讀佛學。又以學佛的孩子不變壞，不收費舉辦</span><wbr style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><span style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;">兒童學佛營、母親節感恩、敬老大型公益活動等等，因此空間不敷使</span><wbr style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;" /><span style="color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;">用，於</span><span class="text_exposed_show" style="display: inline; color: #333333; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 14.399999618530273px; line-height: 18px;">民國七十八年開始申請重建。<br /><br />請照期間因山坡地及水源區的關係，困難重重，歷經十餘年，在僧俗<wbr />二眾同心協力排除萬難下，直至民國八十九年通過審核 終於領到建照。<br /><br />大殿工程動工，須要龐大的工程資金，但本著佛陀慈悲的精神，信眾<wbr />營生不易，以隨緣不化緣的原則，開源節流，又遇到建材上漲，經濟<wbr />不景氣，要完成建寺，經濟壓力、辛苦可見一般。<br /><br />民國九十五年大雄寶殿終於於落成，隔年圖書館亦對外開放使用。大<wbr />殿落成後，第一代住持上照下印和尚尼，認為階段性任務已完成，堅<wbr />持僧團的制度要轉動、僧伽教育要提昇、對信眾的法供養要具足，首<wbr />先推動，由常住眾選出住持、監院、教授尼，以三年為一任，於是在<wbr />照印和尚尼不被選之下，於隔年（九十六年）選出第一任住持 上照下乘法師等三大職事，領導兩序大眾，安心辦道。僧團制度正式<wbr />啟動 代表了人治時代的結束，普宜苑僧團制度新的紀元開始。<br /><br />本苑以叢林規律生活、安僧辦道、培育僧才、宏法利生為宗旨，並研<wbr />習戒律 、結夏安居、常住尼眾分批送往研究所或佛學院就讀，並定期舉辦八<wbr />關齋戒、每月固定一日念佛、禮懺共修會及講經、恭請大德法師授課<wbr />：如阿含、中論、如來藏及律學的研讀，使信眾能懺摩、用功、聽聞<wbr />正法；圖書管提供豐富的圖書、幽靜的閱讀空間；提供國中、國小
+                </dd>
+            </dl>
+            <br class="clearFloat">
+            <!-- 內容欄 end -->
+            
+        </section>
+        <!-- 網頁主要內容 end -->
+        
+        <!-- 頁腳,版權宣告 begin -->
+<!-- #include file="/$template/FrontEnd/site_footer_cprs.inc" -->
+        <!-- 頁腳,版權宣告 end -->
+    </div>
+	
+</div>
+
+</body>
+</html>

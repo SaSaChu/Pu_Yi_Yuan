@@ -1,0 +1,50 @@
+
+$fontUrl : '../webfonts/fonts/';
+@font-face {
+  font-family: 'icomoon';
+  src:  url($fontUrl + 'icomoon.eot?awr9ed');
+  src:  url($fontUrl + 'icomoon.eot?awr9ed#iefix') format('embedded-opentype'),
+    url($fontUrl + 'icomoon.ttf?awr9ed') format('truetype'),
+    url($fontUrl + '/icomoon.woff?awr9ed') format('woff'),
+    url($fontUrl + '/icomoon.svg?awr9ed#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chevron-left:before {
+  content: "\e900";
+}
+.icon-chevron-right:before {
+  content: "\e901";
+}
+.icon-triangle-down:before {
+  content: "\e902";
+}
+.icon-triangle-up:before {
+  content: "\e903";
+}
+.icon-circle-with-cross:before {
+  content: "\e904";
+}
+.icon-cross:before {
+  content: "\e905";
+}
+.icon-menu:before {
+  content: "\e906";
+}
+

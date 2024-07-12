@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* Create with Gulp + SCSS on windows */
+/* ... Pu Yi Yuan 法雨山普宜苑官方網站 ... */
+.main .cover:before, .main footer:before {
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 100%;
+  /*搭配:before 擬元素的垂直置中效果part1*/ }
+
+.main .cover .ctx, .main footer .box {
+  display: inline-block;
+  vertical-align: middle;
+  /*搭配:before 擬元素的垂直置中效果part2*/ }
+
+.main .cover {
+  height: calc(100vh - 60px); }
+  .main .cover .ctx img {
+    width: auto;
+    max-width: 80%;
+    height: auto; }
+  .main .cover .ctx h2 {
+    font-size: 490%; }
+  .main .cover .ctx p {
+    font-size: 119%; }
+
+.main footer {
+  height: 60px; }
+  .main footer .box {
+    font-size: 80%; }
+    .main footer .box .pc-ignore {
+      display: none; }

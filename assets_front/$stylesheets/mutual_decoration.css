@@ -1,0 +1,249 @@
+@charset "UTF-8";
+/* Create with Gulp + SCSS on windows */
+/* ... Pu Yi Yuan 法雨山普宜苑官方網站 ... */
+.main * {
+  /*font-family: Arial, Helvetica, sans-serif, Microsoft YaHei, Microsoft JhengHei, '微软雅黑体', '微軟雅黑體', '微軟正黑體', '黑體' !important;*/
+  font-family: Arial, Helvetica, sans-serif  , STHeiti , Apple LiGothic Medium , Microsoft JhengHei, '微軟正黑體', '黑體' !important; }
+
+.main button {
+  background: none;
+  border: none; }
+
+body {
+  scroll-behavior: smooth; }
+
+html {
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%; }
+
+body {
+  background-image: url("../images/bg001.png"); }
+
+/* 全站背景音樂播放開關 begin */
+.BGplayer {
+  border: #550000 solid 2px;
+  background-color: rgba(245, 233, 25, 0.5);
+  transition: top 0.35s; }
+  .BGplayer button {
+    font-size: 0.75rem;
+    cursor: pointer; }
+    .BGplayer button:active {
+      border: #333 dashed 1px; }
+
+/* 全站背景音樂播放開關 end */
+.main {
+  /* 網頁限制寬度並置中的容器 begin */
+  /* 網頁限制寬度並置中的容器 end */
+  /* 表頭,選單,大標 begin */
+  /* 表頭,選單,大標 end */
+  /* 網站內容段落 begin */
+  /* 網站內容段落 end */
+  /* 網站主選單 begin */
+  /* 網站主選單 end */
+  /* 網站麵包屑 begin */
+  /* 網站麵包屑 end */
+  /* 網頁內容左側欄 begin */
+  /* 網頁內容左側欄 end */
+  /* 網頁內容右側欄 begin */
+  /* 網頁內容右側欄 end */
+  /* 網頁內容元件 begin */
+  /* 網頁內容元件 end */ }
+  .main *,
+  .main button:focus {
+    outline: none; }
+  .main > div.wrapper {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.45);
+    box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.45); }
+  .main .pageTop .siteMenu {
+    text-align: center; }
+  .main nav.siteMenu {
+    background-repeat: no-repeat;
+    background-image: url("../images/nav002.jpg");
+    background-size: contain; }
+    .main nav.siteMenu li {
+      border-right: #fff solid 1px; }
+      .main nav.siteMenu li:last-child {
+        border-right: none; }
+      .main nav.siteMenu li a {
+        color: #fff;
+        text-decoration: none; }
+        .main nav.siteMenu li a:hover:before {
+          background-repeat: no-repeat;
+          background-position: 10px center;
+          background-image: url("../images/hover.png"); }
+    .main nav.siteMenu .FBpage {
+      background-size: contain;
+      background-image: url("../images/facebook.png"); }
+    .main nav.siteMenu .menuIOBtn i.icon-cross {
+      color: #b4854c; }
+  .main nav.breadCrumb ul li a,
+  .main nav.breadCrumb ul li span {
+    text-decoration: none;
+    color: #454545; }
+  .main nav.breadCrumb ul li a:hover {
+    color: #b4854c; }
+  .main aside.sideOptions {
+    /* 單元項目選單 begin */
+    /* 單元項目選單 end */ }
+    .main aside.sideOptions .cap {
+      background-size: contain;
+      background-image: url("../images/sidebartop.png");
+      background-repeat: no-repeat; }
+    .main aside.sideOptions h3 span {
+      color: #3a3a3a;
+      text-align: center;
+      border-bottom: #ba8d5a solid 1px; }
+    .main aside.sideOptions .contentMenu {
+      background-image: url("../images/sidebarbg.png");
+      background-size: contain;
+      background-repeat: repeat-y;
+      background-position: left top; }
+      .main aside.sideOptions .contentMenu li {
+        text-align: center;
+        word-break: break-all; }
+        .main aside.sideOptions .contentMenu li a,
+        .main aside.sideOptions .contentMenu li span.current {
+          text-decoration: none; }
+        .main aside.sideOptions .contentMenu li a {
+          color: #636363; }
+          .main aside.sideOptions .contentMenu li a:hover {
+            color: #b4854c; }
+        .main aside.sideOptions .contentMenu li span.current {
+          color: #b4854c; }
+    .main aside.sideOptions .puppet {
+      background-image: url("../images/sidebardown.png");
+      background-size: cover;
+      background-repeat: no-repeat; }
+  .main dl.contentBlock dt.title span {
+    font-weight: bold;
+    color: #b4854c; }
+  .main dl.contentBlock dt.title .ink {
+    background-image: url("../images/dot.png");
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .main dl.contentBlock dt.title .mobileSideOption {
+    border-top: #b4854c solid 1px;
+    border-bottom: #b4854c solid 1px; }
+    .main dl.contentBlock dt.title .mobileSideOption .menuIOBtn {
+      color: #b4854c; }
+  .main section {
+    /* 最新消息的年度消息圖框 begin */
+    /* 最新消息的年度消息圖框 end */
+    /* 年度消息分項清單 begin */
+    /* 年度消息分項清單 end */
+    /* 分頁清單 begin */
+    /* 分頁清單 end */
+    /* 圖片式分項清單 begin */
+    /* 圖片式分項清單 end */ }
+    .main section h4.dateTime {
+      color: #333;
+      font-weight: normal; }
+    .main section h2.contentTitle {
+      color: #c0021d;
+      letter-spacing: 1px;
+      word-spacing: 1px; }
+    .main section div.backPrev {
+      color: #b4854c; }
+      .main section div.backPrev a {
+        color: #b4854c;
+        text-decoration: none; }
+        .main section div.backPrev a:hover {
+          text-decoration: underline; }
+    .main section .ckx * {
+      color: #463f42; }
+    .main section .ckx * > * {
+      color: inherit;
+      font-weight: inherit; }
+    .main section .ckx p {
+      color: #333;
+      /*word-break:break-all;*/ }
+    .main section .ckx a {
+      color: #64b6d2;
+      text-decoration: underline; }
+      .main section .ckx a:hover {
+        text-decoration: none; }
+    .main section .posterWrapper .frameMiddle {
+      background-repeat: repeat-y;
+      background-size: contain;
+      background-image: url("../images/slideText03.png"); }
+    .main section .subsetList h3 {
+      color: #b4854c;
+      text-align: center; }
+    .main section .subsetList ol li {
+      border-bottom: #333 dashed 1px; }
+      .main section .subsetList ol li:last-child {
+        border-bottom: none; }
+      .main section .subsetList ol li a {
+        color: #333;
+        text-decoration: none; }
+        .main section .subsetList ol li a:hover {
+          color: #b4854c; }
+          .main section .subsetList ol li a:hover time {
+            color: #333; }
+      .main section .subsetList ol li span.current {
+        color: #b4854c; }
+    .main section .pageJump .jumps {
+      text-decoration: none; }
+    .main section .pageJump a.jumps {
+      color: #333; }
+      .main section .pageJump a.jumps:hover {
+        color: #b4854c;
+        text-decoration: underline; }
+    .main section .pageJump a.jumps.toPrev:hover,
+    .main section .pageJump a.jumps.toNext:hover {
+      text-decoration: none; }
+    .main section .pageJump span.jumps.current {
+      color: #b4854c; }
+    .main section .thumbSubsetList h3 {
+      font-weight: normal; }
+    .main section .thumbSubsetList ol li figure a.frame:hover span.frameBroder.video,
+    .main section .thumbSubsetList ol li figure span.frame:hover span.frameBroder.video,
+    .main section .thumbSubsetList ul li figure a.frame:hover span.frameBroder.video,
+    .main section .thumbSubsetList ul li figure span.frame:hover span.frameBroder.video {
+      background-color: rgba(0, 0, 0, 0.1); }
+    .main section .thumbSubsetList ol li figure a.frame img.preload ~ span.frameBroder,
+    .main section .thumbSubsetList ol li figure span.frame img.preload ~ span.frameBroder,
+    .main section .thumbSubsetList ul li figure a.frame img.preload ~ span.frameBroder,
+    .main section .thumbSubsetList ul li figure span.frame img.preload ~ span.frameBroder {
+      background-color: #fff;
+      background-image: url("../images/ajax-loader.gif");
+      background-position: center center;
+      background-repeat: no-repeat; }
+    .main section .thumbSubsetList ol li figure a.frame img.preload ~ span.frameBroder.video,
+    .main section .thumbSubsetList ol li figure span.frame img.preload ~ span.frameBroder.video,
+    .main section .thumbSubsetList ul li figure a.frame img.preload ~ span.frameBroder.video,
+    .main section .thumbSubsetList ul li figure span.frame img.preload ~ span.frameBroder.video {
+      background-image: none; }
+    .main section .thumbSubsetList ol li figure span.frameBroder,
+    .main section .thumbSubsetList ul li figure span.frameBroder {
+      border: #b4854c solid 1px; }
+    .main section .thumbSubsetList ol li figure span.frameBroder.video,
+    .main section .thumbSubsetList ul li figure span.frameBroder.video {
+      background-color: rgba(0, 0, 0, 0.45);
+      background-repeat: no-repeat;
+      background-image: url("../images/video_play.png"); }
+    .main section .thumbSubsetList ol li figure figcaption a,
+    .main section .thumbSubsetList ol li figure figcaption span,
+    .main section .thumbSubsetList ul li figure figcaption a,
+    .main section .thumbSubsetList ul li figure figcaption span {
+      color: #333; }
+    .main section .thumbSubsetList ol li figure figcaption a,
+    .main section .thumbSubsetList ul li figure figcaption a {
+      text-decoration: none; }
+      .main section .thumbSubsetList ol li figure figcaption a:hover,
+      .main section .thumbSubsetList ul li figure figcaption a:hover {
+        color: #b4854c; }
+  .main footer {
+    text-align: center;
+    background-color: #181818; }
+    .main footer address {
+      text-align: center;
+      font-style: normal; }
+    .main footer .cprs {
+      text-align: center; }
+    .main footer * {
+      color: #ffffff; }

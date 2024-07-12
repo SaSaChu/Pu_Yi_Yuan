@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<!-- #include file="/views/FrontEnd/viewport.inc" -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- #include file="/views/FrontEnd/mutual_meta.inc" -->
+<title>法雨山普宜苑</title>
+<!-- mutual JS and CSS begin -->
+<!-- #include file="/views/FrontEnd/mutual_js_css.inc" note="
+vendor.merge.js 內含
+FxUtility19/FxUtility19.beta.js 齊力樂門自用JS lib
+jquery/jquery.js jquery 核心檔v3.4.1
+sweetalert/sweetalert.min.js https://sweetalert.js.org/guides/
+" -->
+<!-- mutual JS and CSS end -->
+<!-- current page JS and CSS begin -->
+<link rel="stylesheet" href="/assets_front/vendor/slick/slick.css" note="Slick Plugin" />
+<link rel="stylesheet" href="/assets_front/vendor/slick/slick-theme.css" note="Slick Plugin" />
+<script language="javascript" type="text/javascript" src="/assets_front/vendor/slick/slick.js" note="Slick Plugin"></script>
+
+
+<link rel="stylesheet" href="/assets_front/stylesheets/index.merge.css" />
+<script language="javascript" type="text/javascript" src="/assets_front/javascripts/ddk.index.js"></script>
+<!-- current page JS and CSS end -->
+</head>
+
+<body>
+<!-- #include file="/views/FrontEnd/ping.inc" -->
+<div class="main">
+	<div class="wrapper">
+<!-- #include file="/views/FrontEnd/header_site_title.inc" -->
+		<!-- 網站主選單 begin -->
+        <nav class="mapedMenu">
+            <ul>
+                <li class="area1"><a href="about.html" title="關於普宜苑"><span class="hideItem">關於普宜苑</span></a></li>
+                <li class="area2"><a href="news.html" title="最新消息"><span class="hideItem">最新消息</span></a></li>
+                <li class="area3"><a href="album.html" title="活動記錄"><span class="hideItem">活動記錄</span></a></li>
+                <li class="area4"><a href="information.html" title="法語原地"><span class="hideItem">法語園地</span></a></li>
+                <li class="area5"><a href="http://211.23.178.6/school001/opac/" title="圖書館"><span class="hideItem">圖書館</span></a></li>
+            </ul>
+            <a href="javascript:alert('link');" target="_blank" class="FBpage" title="臉書粉絲頁"><span class="hideItem">臉書粉絲頁</span></a>
+        </nav>
+        <!-- 網站主選單 end -->
+    	<!-- 網站動畫主圖 begin -->
+        <div class="slickBox">
+        	<figure class="slickCover"><img src="/assets_front/images/index001.png"></figure><!-- 水墨圓弧 -->
+            <div class="mask"><!-- 遮照 -->
+                <ul class="slickPlugin" data-autoplay="1" data-interval="4000">
+                    <li>
+                        <div class="ctx"><figure><img src="/assets_front/images/20140114012301.png"></figure></div>
+                    </li>
+                    <li>
+                        <div class="ctx"><figure><img src="/assets_front/images/20140114012319.png"></figure></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 網站動畫主圖 end -->
+        
+        <!-- 頁腳,版權宣告 begin -->
+<!-- #include file="/views/FrontEnd/site_footer_cprs.inc" -->
+        <!-- 頁腳,版權宣告 end -->
+    </div>
+	
+</div>
+
+</body>
+</html>

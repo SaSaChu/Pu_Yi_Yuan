@@ -1,0 +1,502 @@
+@charset "utf-8";
+/* Create with Gulp + SCSS on windows */
+/* ... Pu Yi Yuan 法雨山普宜苑官方網站 ... */
+@import '_mixins.scss';
+@import '_extends.scss';
+$goldColor:#b4854c;
+body{
+	scroll-behavior: smooth;
+}
+
+html{
+	-moz-text-size-adjust: 100%;
+	 -ms-text-size-adjust: 100%;
+	 -webkit-text-size-adjust: 100%;
+	 text-size-adjust: 100%;
+}
+body{
+	background-image: url('../images/bg001.png');
+}
+/* 全站背景音樂播放開關 begin */
+.BGplayer{
+	&.show{
+		
+	}
+	
+	border: #550000 solid 2px;
+	background-color: rgba(245, 233, 25,.5);
+	transition:top 0.35s;
+	audio{
+		
+	}
+	button{
+		&:active{
+			border: #333 dashed 1px;
+			span{
+			}
+		}
+		font-size: 0.75rem;
+		cursor: pointer;
+		span{
+			
+		}
+	}
+	button.closeHintBg{
+		
+	}
+	button.playBg{
+		
+		
+		.text{
+			
+		}
+		.author{
+			
+		}
+	}
+}
+/* 全站背景音樂播放開關 end */
+.main{
+	*{
+		@extend %mutualFont;
+	}
+	button{
+		@extend %clearBgAndBorder;
+	}
+	*,
+	button:focus{
+		outline: none;
+	}
+	/* 網頁限制寬度並置中的容器 begin */
+	> div.wrapper{
+		background-color: #fff;
+		-webkit-box-shadow: 0px 0px 15px -4px rgba(0,0,0,0.45);
+		-moz-box-shadow: 0px 0px 15px -4px rgba(0,0,0,0.45);
+		box-shadow: 0px 0px 15px -4px rgba(0,0,0,0.45);
+	}
+	/* 網頁限制寬度並置中的容器 end */
+
+	/* 表頭,選單,大標 begin */
+	.pageTop{
+		header,
+		.siteMenu{
+		}
+		header{
+			
+			.siteLogo{
+			}
+		}
+		.siteMenu{
+			text-align: center;
+			ul{
+				li{
+				}
+			}
+			.FBpage{
+			}
+			.menuIOBtn.openMenu{
+			
+			}
+		}
+		.banner{
+		}
+	}
+	/* 表頭,選單,大標 end */
+
+	/* 網站內容段落 begin */
+	section.pageCtx{
+		aside.sideOptions{
+			h3{}
+			.contentMenu{}
+			.puppet{}
+		}
+		dl.contentBlock{
+			dt.title{
+
+			}
+			dd{}
+		}
+	}
+	/* 網站內容段落 end */
+
+	/* 網站主選單 begin */
+	nav.siteMenu{
+		background-repeat: no-repeat;
+		background-image: url('../images/nav002.jpg');
+		background-size: contain;
+		ul{}
+		li{
+			&:last-child{
+				border-right: none;
+			}
+			border-right: #fff solid 1px;
+			a{
+				&:hover{
+					&:before{
+						background-repeat: no-repeat;
+						background-position: 10px center;
+						background-image: url('../images/hover.png');
+					}
+				}
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+		.FBpage{
+			background-size: contain;
+			background-image: url('../images/facebook.png');
+		}
+		.menuIOBtn{
+			i.icon-cross{
+				color: $goldColor;
+			}
+		}
+		.menuCover{
+
+		}
+	}
+	/* 網站主選單 end */
+
+	/* 網站麵包屑 begin */
+	nav.breadCrumb{
+		ul{
+			li:last-child{
+				&:after{
+				}
+			}
+			li{
+				&:after{
+				}
+				a,
+				span{
+					text-decoration: none;
+					color:#454545;
+				}
+				a{
+					&:hover{
+						color:$goldColor;
+					}
+				}
+			}
+		}
+	}
+	/* 網站麵包屑 end */
+
+	
+
+	/* 網頁內容左側欄 begin */
+	aside.sideOptions{
+		.cap{
+			background-size: contain;
+			background-image: url('../images/sidebartop.png');
+			background-repeat: no-repeat;
+		}
+		h3{
+			span{
+				color: #3a3a3a;
+				text-align: center;
+				border-bottom: #ba8d5a solid 1px;
+			}
+		}
+		/* 單元項目選單 begin */
+		.contentMenu{
+			background-image: url('../images/sidebarbg.png');
+			background-size: contain;
+			background-repeat: repeat-y;
+			background-position: left top;
+			ul{
+			}
+			li{
+				text-align: center;
+				word-break: break-all;
+				a,
+				span.current{
+					text-decoration: none;
+				}
+				a{
+					&:hover{
+						color: $goldColor;
+					}
+					color: #636363;
+				}
+				span.current{
+					color: $goldColor;
+				}
+			}
+		}
+		/* 單元項目選單 end */
+		.puppet{
+			background-image: url('../images/sidebardown.png');
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+	}
+	/* 網頁內容左側欄 end */
+	
+	/* 網頁內容右側欄 begin */
+	dl.contentBlock{
+		dt.title{
+			span{
+				font-weight: bold;
+				color: $goldColor;
+			}
+			span.page{
+			}
+			.ink{
+				background-image: url('../images/dot.png');
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+			.mobileSideOption{
+				border-top: $goldColor solid 1px;
+				border-bottom: $goldColor solid 1px;
+				ul{
+					
+				}
+				.menuIOBtn{
+					&:active{
+					}
+					color: $goldColor;
+				}
+			}
+		}
+		dd{
+			.posterWrapper,
+			.subsetList,
+			.thumbSubsetList,
+			.ckx{
+			}
+			hr.withShadow{
+			}
+
+		}
+		
+	}
+	/* 網頁內容右側欄 end */
+
+
+	/* 網頁內容元件 begin */
+	section{
+		h4.dateTime{
+			color: #333;
+			font-weight: normal;
+			time{
+
+			}
+		}
+		h2.contentTitle{
+			color: #c0021d;
+			letter-spacing: 1px;
+			word-spacing: 1px;
+		}
+		div.backPrev{
+			color: $goldColor;
+			a{
+				&:hover{
+					text-decoration: underline;
+				}
+				color: $goldColor;
+				text-decoration: none;
+			}
+		}
+		.ckx{
+			*{
+				color: #463f42;
+				
+			}
+			* > *{
+				color: inherit;
+				font-weight: inherit;
+				
+			}
+			p{
+				
+				color:#333;
+				
+				/*word-break:break-all;*/
+			}
+			
+			a{
+				&:hover{
+					text-decoration: none;
+				}
+
+				color: #64b6d2;
+				text-decoration: underline;
+			}
+		}
+		/* 最新消息的年度消息圖框 begin */
+		.posterWrapper{
+			figure{
+			}
+			.frameTop,
+			.frameMiddle,
+			.frameBottom{
+				img{
+				}
+			}
+			
+			.frameMiddle{
+				background-repeat: repeat-y;
+				background-size: contain;
+				background-image: url('../images/slideText03.png');
+			}
+			
+		}
+		/* 最新消息的年度消息圖框 end */
+
+		/* 年度消息分項清單 begin */
+		.subsetList{
+			h3{
+				color: $goldColor;
+				text-align: center;
+			}
+			ol{
+				li{
+					&:last-child{
+						border-bottom: none;
+					}
+					border-bottom: #333 dashed 1px;
+					a,
+					span.current{
+						time{
+						}
+					}
+					a{
+						&:hover{
+							color: $goldColor;
+							
+							time{
+								color: #333;
+
+							}
+						}
+						color: #333;
+						text-decoration: none;
+
+					}
+					span.current{
+						color: $goldColor;
+					}
+				}
+			}
+		}
+		/* 年度消息分項清單 end */
+
+		/* 分頁清單 begin */
+		.pageJump{
+			&:before{
+			}
+			.jumps{
+				text-decoration: none;
+			}
+			a.jumps{
+				&:hover{
+					color: $goldColor;
+					text-decoration: underline;
+				}
+				color: #333;
+			}
+			a.jumps.toPrev,
+			a.jumps.toNext{
+				&:hover{
+					text-decoration: none;
+				}
+			}
+			span.jumps.current{
+				color: $goldColor;
+			}
+		}
+		/* 分頁清單 end */
+
+		/* 圖片式分項清單 begin */
+		.thumbSubsetList{
+			h3{
+				font-weight: normal;
+			}
+			ol,
+			ul{
+				li{
+					&:nth-child(3n){
+					}
+					figure{
+						a.frame,
+						span.frame{
+							&:hover{
+								span.frameBroder{
+								}
+								span.frameBroder.video{
+									background-color: rgba(0,0,0,0.1);
+								}
+							}
+							img{
+								&.preload{
+									&~span.frameBroder{
+										background-color: #fff;
+										background-image: url('../images/ajax-loader.gif');
+										background-position: center center;
+										background-repeat: no-repeat;
+									}
+									&~span.frameBroder.video{
+										background-image: none;
+									}
+								}
+							}
+						}
+						span.frameBroder{
+							border:$goldColor solid 1px;
+						}
+						span.frameBroder.video{
+							background-color: rgba(0,0,0,0.45);
+							background-repeat: no-repeat;
+							
+
+							background-image: url('../images/video_play.png');
+						}
+						figcaption{
+							a,
+							span{
+								color: #333;
+							}
+							a{
+								&:hover{
+									color: $goldColor;
+								}
+								text-decoration: none;
+							}
+							span{
+							}
+						}
+					}
+				}
+			}
+			ul{
+			}
+		}
+		/* 圖片式分項清單 end */
+
+		hr.withShadow{
+		}
+	}
+	/* 網頁內容元件 end */
+	footer{
+		text-align: center;
+		address{
+			text-align: center;
+			font-style: normal;
+			
+		}
+		.add{
+			
+		}
+		.cprs{
+			
+			
+			text-align: center;
+		}
+		background-color: #181818;
+		*{
+			color:#ffffff;
+		}
+	}
+}

@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* Create with Gulp + SCSS on windows */
+/* ... Pu Yi Yuan 法雨山普宜苑官方網站 ... */
+@import '_mixins.scss';
+/*
+@media (orientation:portrait){}
+@media (orientation:landscape){}
+*/
+// Extra small devices (portrait phones, less than 768px)
+@media (max-width: 767.98px) {
+
+
+#pingForRwd p {
+  float: right;
+}
+
+.main{
+	position: relative;
+	height: 100vh;
+	.cover{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: calc(100% - 2rem);
+		z-index: 1;
+		.ctx{
+			width: calc(100% - 1rem);
+			h2{
+				@include fontSize("40pt");
+			}
+			@media (orientation:landscape){
+			img{
+				max-width: inherit;
+				width: auto;
+				height: 20vh;
+			}
+			}
+
+			p{
+				@include fontSize("18pt");
+			}
+		}
+	}
+	footer{
+		&:before{
+			display: none;
+		}
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		z-index: 2;
+		height: auto;
+		.box{
+			display: block;
+			padding: 1rem 0.75rem;
+			.phone-ignore,
+			.pc-ignore{
+				display: none;
+			}
+			.tablet-ignore{
+				display: inline;
+			}
+		}
+		
+	}
+}
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+#pingForRwd p {
+  float: right;
+}
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+
+#pingForRwd p {
+  float: right;
+}
+.main{
+	position: relative;
+	height: 100vh;
+	.cover{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: calc(100% - 3rem);
+		z-index: 1;
+	}
+	footer{
+		&:before{
+			display: none;
+		}
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		z-index: 2;
+		height: auto;
+		.box{
+			display: block;
+			padding: 1rem 0.75rem;
+			.pc-ignore{
+				display: block;
+			}
+			.tablet-ignore{
+				display: none;
+			}
+		}
+	}
+}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
+
+
+

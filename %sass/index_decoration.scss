@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* Create with Gulp + SCSS on windows */
+/* ... Pu Yi Yuan 法雨山普宜苑官方網站 ... */
+@import '_mixins.scss';
+@import '_extends.scss';
+
+
+
+
+.main{
+	/* 網頁限制寬度並置中的容器 begin */
+	> div.wrapper{
+		&:before{
+		}
+	    background: none;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+	/* 網頁限制寬度並置中的容器 end */
+
+	/* slick 外掛作出的首頁輪撥主圖 begin */
+	.slickBox{
+		figure{
+		}
+		.slickCover,
+		.slickPlugin,
+		.slickPlugin .ctx,
+		.mask{
+		}
+		.mask,
+		.slickCover{
+		}
+		.slickCover{
+	    	
+		}
+		.mask{/*遮照*/
+			
+		}
+		.slickPlugin{
+			.ctx{
+
+				figure{
+				}
+			}
+		}
+	}
+	/* slick 外掛作出的首頁輪撥主圖 end */
+	
+	.mapedMenu,
+	.FBpage,
+	header,
+	footer{
+	}
+	/* 類image map 選單 begin */
+	.mapedMenu{
+		
+		ul{
+			background-repeat: no-repeat;
+			background-position: left top;
+			background-image: url('../images/nav.png');
+			li{
+				
+				a{
+					&:hover{
+						&:before{
+							background-repeat: no-repeat;
+							background-position: 10px center;
+							background-image: url('../images/hover.png');
+						}
+					}
+				}
+			}
+			li.area1{
+			}
+			li.area2{
+			}
+			li.area3{
+			}
+			li.area4{
+			}
+			li.area5{
+			}
+		}
+		.FBpage{
+			background-size: contain;
+			background-image: url('../images/facebook.png');
+		}
+	}
+	/* 類image map 選單 end */
+
+	header{
+		.siteLogo{
+			
+		}
+	}
+
+	footer{
+		background: none;
+		text-align: right;
+		address,
+		.cprs{
+			text-align: right;
+		}
+		*{
+			color:#333;
+		}
+	}
+
+}

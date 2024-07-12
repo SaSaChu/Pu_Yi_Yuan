@@ -1,0 +1,495 @@
+@charset "utf-8";
+/* Create with Gulp + SCSS on windows */
+/* ... Pu Yi Yuan 法雨山普宜苑官方網站 ... */
+@import '_mixins.scss';
+/*
+@media (orientation:portrait){}
+@media (orientation:landscape){}
+*/
+// Extra small devices (portrait phones, less than 768px)
+@media (max-width: 767.98px) {
+
+.main{
+	/* 網頁限制寬度並置中的容器 begin */
+	> div.wrapper{
+	}
+	/* 網頁限制寬度並置中的容器 end */
+
+	/* 表頭,選單,大標 begin */
+	.pageTop{
+		header,
+		.siteMenu{
+		}
+		header{
+			.siteLogo{
+				img{
+				}
+			}
+		}
+		.siteMenu{
+			ul{
+				&.openMenu{
+				}
+				li{
+				}
+			}
+			.FBpage{
+			}
+			.menuIOBtn.openMenu{
+			}
+		}
+		.banner{
+		}
+	}
+	/* 表頭,選單,大標 end */
+
+	/* 網站內容段落 begin */
+	section.pageCtx{
+		aside.sideOptions{
+			h3{}
+			.contentMenu{}
+			.puppet{}
+		}
+		dl.contentBlock{
+			dt.title{
+				>*{
+				}
+				.mobileSideOption{
+					
+				}
+			}
+			dd{}
+		}
+	}
+	/* 網站內容段落 end */
+
+	/* 網站主選單 begin */
+	nav.siteMenu{
+		@media (orientation:landscape){
+		}
+		ul{
+			&.openMenu{
+				background-color: #fff;
+				li{
+					&:last-child{
+						border-bottom: none;
+					}
+					border-bottom: #e8e8e8 solid 2px;
+					a{
+						color: #333;
+						text-align: left;
+					}
+				}
+			}
+		}
+		li{
+			&:last-child{
+				border-right: none;
+			}
+			border-right: none;
+			a{
+				&:hover{
+					&:before{
+					}
+				}
+			}
+		}
+		.FBpage{
+		}
+		.menuIOBtn{
+			&.openMenu{
+
+				i.icon-menu{
+				}
+				i.icon-cross{
+				}
+			}
+			&.closeMenu{
+				background-color: #d8d8d8;
+				text-align: right;
+				i.icon-menu{
+				}
+				i.icon-cross{
+				}
+			}
+			color: #333;
+			background-color: #d8d8d8;
+			i{
+			}
+		}
+		.menuCover{
+			&.openMenu{
+				background-color: rgba(0,0,0,0.55);
+			}
+		}
+	}
+	/* 網站主選單 end */
+
+	/* 網站麵包屑 begin */
+	nav.breadCrumb{
+		ul{
+
+			li:last-child{
+				&:after{
+				}
+			}
+			li{
+				&:after{
+				}
+				a,
+				span{
+				}
+				a{
+					&:hover{
+					}
+				}
+			}
+		}
+	}
+	/* 網站麵包屑 end */
+
+	/* 網頁內容右側欄 begin */
+	dl.contentBlock{
+		dt.title{
+			
+			span{
+				
+			}
+			.ink{
+				
+			}
+			.mobileSideOption{
+				.labelBox{
+					span{
+					}
+				}
+				ul{
+					&.menuOpen{
+					}
+					background-color: rgba(255,255,255,0.9);
+					li{
+						&:last-child{
+							border-bottom: none;
+						}
+						border-bottom: #e8e8e8 solid 1px;
+						a{
+							color: #333;
+							text-decoration: none;
+						}
+					}
+				}
+				.ink{
+				}
+				.menuIOBtn{
+					&.menuClose{
+						i.icon-triangle-down{
+						}
+						i.icon-triangle-up{
+						}
+					}
+					&.menuOpen{
+						i.icon-triangle-down{
+						}
+						i.icon-triangle-up{
+						}
+					}
+					i{
+					}
+				}
+			}
+		}
+		dd{}
+	}
+	/* 網頁內容右側欄 end */
+
+	/* 網頁內容元件 begin */
+	section{
+		/* 分頁清單 begin */
+		.pageJump{
+			&:before{
+				
+			}
+			
+			.jumps{
+			}
+			a.jumps{
+				&:hover{
+				}
+			}
+			a.jumps.toPrev,
+			a.jumps.toNext{
+				&:hover{
+				}
+			}
+			span.jumps.current{
+			}
+		}
+		/* 分頁清單 end */
+
+		/* 圖片式分項清單 begin */
+		.thumbSubsetList{
+			ol,
+			ul{
+				li{
+					&:nth-child(3n),
+					&:nth-child(2n){
+					}
+
+				}
+			}
+			ul{
+				li{
+					
+					div.ctx{
+					}
+					figure{
+						a.frame,
+						span.frame{
+							&:hover{
+								span.frameBroder{
+									
+								}
+							}
+							img{
+							}
+						}
+					}
+					@media (orientation:landscape){
+					div.ctx{
+					}
+					figure{
+						a.frame,
+						span.frame{
+						}
+					}
+					}
+				}
+			}
+		}
+		/* 圖片式分項清單 end */
+	}
+	/* 網頁內容元件 end */
+	footer{
+		&:before{
+		}
+		.box{
+			.pc-ignore{
+			}
+			.phone-ignore{
+			}
+			.tablet-ignore{
+			}
+		}
+		
+	}
+
+}
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+.main{
+	/* 網頁限制寬度並置中的容器 begin */
+	> div.wrapper{
+	}
+	/* 網頁限制寬度並置中的容器 end */
+
+	/* 表頭,選單,大標 begin */
+	.pageTop{
+		
+		header,
+		.siteMenu{
+			
+		}
+		header{
+			
+			.siteLogo{
+				
+				img{
+				}
+			}
+		}
+		.siteMenu{
+			
+			ul{
+				li{
+					
+				}
+			}
+			.FBpage{
+				
+			}
+		}
+		.banner{
+			
+		}
+	}
+	/* 表頭,選單,大標 end */
+
+	/* 網站內容段落 begin */
+	section.pageCtx{
+		aside.sideOptions{
+			
+			h3{}
+			.contentMenu{}
+			.puppet{}
+		}
+		dl.contentBlock{
+			
+			dt.title{
+
+			}
+			dd{}
+		}
+	}
+	/* 網站內容段落 end */
+
+	/* 網站主選單 begin */
+	nav.siteMenu{
+		ul{}
+		li{
+			&:last-child{
+				
+			}
+			a{
+				&:hover{
+					&:before{
+						
+					}
+				}
+				
+			}
+		}
+		.FBpage{
+			
+		}
+	}
+	/* 網站主選單 end */
+	
+	/* 網站麵包屑 begin */
+	nav.breadCrumb{
+		
+		ul{
+			
+			li:last-child{
+				&:after{
+				}
+			}
+			li{
+				&:after{
+					
+				}
+				a,
+				span{
+					
+				}
+				a{
+					&:hover{
+						
+					}
+				}
+			}
+		}
+	}
+	/* 網站麵包屑 end */
+	
+	
+	/* 網頁內容左側欄 begin */
+	aside.sideOptions{
+		.cap{
+		}
+		h3{
+			span{
+			}
+		}
+		/* 單元項目選單 begin */
+		.contentMenu{
+			ul{
+			}
+			li{
+				a,
+				span.current{
+				}
+				a{
+				}
+				span.current{
+				}
+			}
+		}
+		/* 單元項目選單 end */
+		.puppet{
+			
+		}
+	}
+	/* 網頁內容左側欄 end */
+
+	/* 網頁內容元件 begin */
+	section{
+		/* 圖片式分項清單 begin */
+		.thumbSubsetList{
+			ol{
+				li{
+					&:nth-child(3n){
+					}
+					&:nth-child(2n){
+					}
+					figure{
+						a.frame,
+						span.frame{
+							&:hover{
+								span.frameBroder{
+								}
+							}
+							img{
+							}
+						}
+						span.frameBroder{
+						}
+						figcaption{
+							a{
+								&:hover{
+								}
+							}
+						}
+					}
+				}
+			}
+			ul{
+			}
+		}
+		/* 圖片式分項清單 end */
+	}
+	/* 網頁內容元件 end */
+
+	footer{
+		&:before{
+		}
+		.box{
+			.pc-ignore{
+			}
+			.tablet-ignore{
+			}
+		}
+	}
+
+}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
+
+
+

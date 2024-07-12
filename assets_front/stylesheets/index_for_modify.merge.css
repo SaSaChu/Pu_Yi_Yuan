@@ -1,0 +1,173 @@
+@charset "UTF-8";
+/* Create with Gulp + SCSS on windows */
+/* ... Pu Yi Yuan 法雨山普宜苑官方網站 ... */
+.main .cover:before, .main footer:before {
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 100%;
+  /*搭配:before 擬元素的垂直置中效果part1*/ }
+
+.main .cover .ctx, .main footer .box {
+  display: inline-block;
+  vertical-align: middle;
+  /*搭配:before 擬元素的垂直置中效果part2*/ }
+
+.main .cover {
+  height: calc(100vh - 60px); }
+  .main .cover .ctx img {
+    width: auto;
+    max-width: 80%;
+    height: auto; }
+  .main .cover .ctx h2 {
+    font-size: 490%; }
+  .main .cover .ctx p {
+    font-size: 119%; }
+
+.main footer {
+  height: 60px; }
+  .main footer .box {
+    font-size: 80%; }
+    .main footer .box .pc-ignore {
+      display: none; }
+
+@charset "UTF-8";
+/* Create with Gulp + SCSS on windows */
+/* ... Pu Yi Yuan 法雨山普宜苑官方網站 ... */
+/*
+@media (orientation:portrait){}
+@media (orientation:landscape){}
+*/
+@media (max-width: 767.98px) {
+  #pingForRwd p {
+    float: right; }
+  .main {
+    position: relative;
+    height: 100vh; }
+    .main .cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 2rem);
+      z-index: 1; }
+      .main .cover .ctx {
+        width: calc(100% - 1rem); }
+        .main .cover .ctx h2 {
+          font-size: 256%; } }
+      @media (max-width: 767.98px) and (orientation: landscape) {
+        .main .cover .ctx img {
+          max-width: inherit;
+          width: auto;
+          height: 20vh; } }
+
+@media (max-width: 767.98px) {
+        .main .cover .ctx p {
+          font-size: 100%; }
+    .main footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 2;
+      height: auto; }
+      .main footer:before {
+        display: none; }
+      .main footer .box {
+        display: block;
+        padding: 1rem 0.75rem; }
+        .main footer .box .phone-ignore,
+        .main footer .box .pc-ignore {
+          display: none; }
+        .main footer .box .tablet-ignore {
+          display: inline; } }
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #pingForRwd p {
+    float: right; } }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #pingForRwd p {
+    float: right; }
+  .main {
+    position: relative;
+    height: 100vh; }
+    .main .cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 3rem);
+      z-index: 1; }
+    .main footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 2;
+      height: auto; }
+      .main footer:before {
+        display: none; }
+      .main footer .box {
+        display: block;
+        padding: 1rem 0.75rem; }
+        .main footer .box .pc-ignore {
+          display: block; }
+        .main footer .box .tablet-ignore {
+          display: none; } }
+
+@charset "UTF-8";
+/* Create with Gulp + SCSS on windows */
+/* ... Pu Yi Yuan 法雨山普宜苑官方網站 ... */
+@font-face {
+  font-family: 'un';
+  src: url("../webfonts/iconfont/un.eot?30vszg");
+  src: url("../webfonts/iconfont/un.eot?30vszg#iefix") format("embedded-opentype"), url("../webfonts/iconfont/un.ttf?30vszg") format("truetype"), url("../webfonts/iconfont/un.woff?30vszg") format("woff"), url("../webfonts/iconfont/un.svg?30vszg#un") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'un' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-facebook2:before {
+  content: "\ea91"; }
+
+.main .cover {
+  background-image: url("../images/bg.png"); }
+  .main .cover .ctx h2 {
+    color: #94693c;
+    font-weight: bold;
+    letter-spacing: 25px;
+    word-spacing: 25px; }
+  .main .cover .ctx a {
+    color: #2e2e2e; }
+  .main .cover .ctx .fb {
+    color: #4055a0; }
+
+.main footer {
+  background-color: #181818; }
+  .main footer * {
+    color: #ffffff; }
+
+@charset "UTF-8";
+/* Create with Gulp + SCSS on windows */
+/* ... Pu Yi Yuan 法雨山普宜苑官方網站 ... */
+/*
+@media (orientation:portrait){}
+@media (orientation:landscape){}
+*/
+@media (max-width: 767.98px) {
+  .main .cover .ctx h2 {
+    letter-spacing: 5px;
+    word-spacing: 5px; } }

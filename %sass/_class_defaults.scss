@@ -1,0 +1,108 @@
+.hiddenItem{
+	font-size: 1px;
+	line-height: 0;
+	text-indent: 0;
+	visibility: hidden;
+}
+.hideItem{
+	display: none;
+}
+.clearFloat{
+	&:before,
+	&:after{
+		margin: 0;
+		padding: 0;
+		display: none;
+	}
+	clear: both;
+	margin: 0; 
+	padding: 0;
+	line-height: 0;
+	font-size: 0;
+	height: 0;
+	display: block;
+	width: 100%;
+}
+.blockSelfCenter{
+	display: block !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+.inlineBlockCenterReady{
+	display: inline-block !important;
+	text-align: center;
+	.inlineBlockCenter{
+		display: inline-block !important;
+		*{
+			text-align: initial;
+		}
+	}
+}
+
+.valignReady{
+	&:before{
+		content: ' ';
+		display: inline-block !important;
+		vertical-align: middle;
+		margin-left: -0.25rem;
+		width: 0;
+		height: 100%;
+		/*搭配:before 擬元素的垂直置中效果part1*/
+	}
+	.valignStart,
+	.valignMiddle,
+	.valignEnd{
+		display: inline-block !important;
+	}
+	.valignStart{
+		vertical-align: top;
+		/*搭配:before 擬元素的垂直置上效果part2-1*/
+	}
+	.valignMiddle{
+		vertical-align: middle;
+		/*搭配:before 擬元素的垂直置中效果part2-2*/
+	}
+	.valignEnd{
+		vertical-align: bottom;
+		/*搭配:before 擬元素的垂直置底效果part2-3*/
+	}
+}
+.xyCenterReady{
+	display: inline-block !important;
+	text-align: center;
+	&:before{
+		content: ' ';
+		display: inline-block !important;
+		vertical-align: middle;
+		margin-left: -0.25rem;
+		width: 0;
+		height: 100%;
+		/*搭配:before 擬元素的垂直置中效果part1*/
+	}
+	.xyCenter{
+		display: inline-block !important;
+		vertical-align: middle;
+		*{
+			text-align: initial;
+		}
+		
+	}
+}
+select.styled{
+
+	appearance:none;
+	-moz-appearance:none; /* Firefox */
+	-webkit-appearance:none; /* Safari and Chrome */
+	border: none;
+	background: #fff;
+	background-repeat: no-repeat;
+	
+	
+}
+select.styled::-ms-expand { 
+    display: none; /* remove default arrow on ie10 and ie11 */
+}
+select.styled:disabled{
+	background-color: #ccc;
+	color: #666;
+}

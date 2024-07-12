@@ -1,0 +1,70 @@
+@mixin roundBorder($_r:5px){
+	/* 從IE9 開始支援 */
+	-webkit-border-radius: $_r;
+	-moz-border-radius: $_r;
+	border-radius: $_r;
+	@content;
+}
+@mixin glowOut($_glowRadius:7px , $_glowSize:1px , $_color:rgba(0,0,0,0.75)){
+	/* 從IE9 開始支援 */
+	-webkit-box-shadow: 0px 0px $_glowRadius $_glowSize $_color;
+	-moz-box-shadow: 0px 0px $_glowRadius $_glowSize $_color;
+	box-shadow: 0px 0px $_glowRadius $_glowSize $_color;
+}
+@mixin fontSize($level:docTitle){
+	$base:100%;
+	$ratio:0;
+	@if $level == "13pt"{
+		$ratio:0.8;
+	} @else if $level == "14pt"{
+		$ratio:0.89;
+	} @else if $level == "16pt"{
+		$ratio:0.93;
+	} @else if $level == "17pt"{
+		$ratio:0.98;
+	} @else if $level == "18pt"{
+		$ratio:1.0;
+	} @else if $level == "20pt"{
+		$ratio:1.19;
+	} @else if $level == "22pt"{
+		$ratio:1.29;
+	} @else if $level == "24pt"{
+		$ratio:1.36;
+	} @else if $level == "26pt"{
+		$ratio:1.55;
+	} @else if $level == "28pt"{
+		$ratio:1.61;
+	} @else if $level == "30pt"{
+		$ratio:1.89;
+	} @else if $level == "32pt"{
+		$ratio:2.44;
+	} @else if $level == "40pt"{
+		$ratio:2.56;
+	} @else if $level == "54pt"{
+		$ratio:3.41;
+	} @else if $level == "77pt"{
+		$ratio:4.90;
+	} @else if $level == "131pt"{
+		$ratio:8.40;
+	} @else {
+		$ratio:1;
+	}
+
+	font-size:($base*$ratio);
+}
+
+@mixin layoutVisible($cmd){
+	@if $cmd == true{
+		position: relative;
+		top: inherit;
+		left: inherit;
+		width: inherit;
+		height: inherit;
+	} @else {
+		position: absolute;
+		top: -1000000px;
+		left: -1000000px;
+		width: 100px;
+		height: 100px;
+	}
+}

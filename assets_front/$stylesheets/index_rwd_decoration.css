@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/* Create with Gulp + SCSS on windows */
+/* ... Pu Yi Yuan 法雨山普宜苑官方網站 ... */
+/*
+@media (orientation:portrait){}
+@media (orientation:landscape){}
+*/
+@media (max-width: 767.98px) {
+  .main footer {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #000; }
+    .main footer .box * {
+      text-align: center; }
+    .main footer .cprs {
+      text-align: center; } }

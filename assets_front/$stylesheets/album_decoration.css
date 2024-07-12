@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* Create with Gulp + SCSS on windows */
+/* ... Pu Yi Yuan 法雨山普宜苑官方網站 ... */
+/* fancybox 複寫 begin */
+.fancybox-slide--image .fancybox-content {
+  border: #b4854c solid 2px; }
+
+.fancybox-caption__body {
+  /*擴充的說明標題*/ }
+  .fancybox-caption__body .childTitle {
+    text-align: left; }
+  .fancybox-caption__body .child {
+    text-align: left; }
+
+.extendCloseFancyboxBtn {
+  /*擴充的關閉按鈕*/
+  border: #b4854c solid 3px;
+  background-color: #fff;
+  color: #b4854c; }
+
+/* fancybox 複寫 end */

@@ -1,0 +1,516 @@
+@charset "UTF-8";
+/* Create with Gulp + SCSS on windows */
+/* ... Pu Yi Yuan 法雨山普宜苑官方網站 ... */
+.BGplayer button {
+  background: none;
+  border: none; }
+
+.main > div.wrapper {
+  margin: 0 auto; }
+
+.main section .pageJump:before, .main footer:before {
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 100%;
+  /*搭配:before 擬元素的垂直置中效果part1*/ }
+
+.main section .pageJump .jumps, .main footer .box {
+  display: inline-block;
+  vertical-align: middle;
+  /*搭配:before 擬元素的垂直置中效果part2*/ }
+
+.main nav.breadCrumb ul li, .main section .thumbSubsetList ol li figure figcaption,
+.main section .thumbSubsetList ul li figure figcaption {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden; }
+
+.hideItem {
+  display: none; }
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+  display: block;
+  width: 100%; }
+  .clearFloat:before, .clearFloat:after {
+    margin: 0;
+    padding: 0;
+    display: none; }
+
+.blockSelfCenter {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important; }
+
+.inlineBlockCenterReady {
+  display: inline-block !important;
+  text-align: center; }
+  .inlineBlockCenterReady .inlineBlockCenter {
+    display: inline-block !important; }
+    .inlineBlockCenterReady .inlineBlockCenter * {
+      text-align: initial; }
+
+.valignReady:before {
+  content: ' ';
+  display: inline-block !important;
+  vertical-align: middle;
+  margin-left: -0.25rem;
+  width: 0;
+  height: 100%;
+  /*搭配:before 擬元素的垂直置中效果part1*/ }
+
+.valignReady .valignStart,
+.valignReady .valignMiddle,
+.valignReady .valignEnd {
+  display: inline-block !important; }
+
+.valignReady .valignStart {
+  vertical-align: top;
+  /*搭配:before 擬元素的垂直置上效果part2-1*/ }
+
+.valignReady .valignMiddle {
+  vertical-align: middle;
+  /*搭配:before 擬元素的垂直置中效果part2-2*/ }
+
+.valignReady .valignEnd {
+  vertical-align: bottom;
+  /*搭配:before 擬元素的垂直置底效果part2-3*/ }
+
+.xyCenterReady {
+  display: inline-block !important;
+  text-align: center; }
+  .xyCenterReady:before {
+    content: ' ';
+    display: inline-block !important;
+    vertical-align: middle;
+    margin-left: -0.25rem;
+    width: 0;
+    height: 100%;
+    /*搭配:before 擬元素的垂直置中效果part1*/ }
+  .xyCenterReady .xyCenter {
+    display: inline-block !important;
+    vertical-align: middle; }
+    .xyCenterReady .xyCenter * {
+      text-align: initial; }
+
+select.styled {
+  appearance: none;
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  border: none;
+  background: #fff;
+  background-repeat: no-repeat; }
+
+select.styled::-ms-expand {
+  display: none;
+  /* remove default arrow on ie10 and ie11 */ }
+
+select.styled:disabled {
+  background-color: #ccc;
+  color: #666; }
+
+#pingForRwd {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: -1000px;
+  left: -1000px; }
+
+#pingForRwd p {
+  float: left; }
+
+/* 全站背景音樂播放開關 begin */
+.BGplayer {
+  position: fixed;
+  top: calc(-1.8rem - 4px);
+  left: 0;
+  width: calc(100% - 4px);
+  height: 1.8rem;
+  z-index: 9; }
+  .BGplayer.show {
+    top: 0; }
+  .BGplayer audio {
+    position: absolute;
+    top: -10000px;
+    left: -10000px; }
+  .BGplayer button {
+    float: left;
+    height: 100%; }
+    .BGplayer button:active span {
+      padding-top: 1px;
+      padding-left: 1px; }
+    .BGplayer button span {
+      display: inline-block; }
+  .BGplayer button.closeHintBg {
+    padding: 0;
+    width: 3rem; }
+  .BGplayer button.playBg {
+    padding: 0 0.35rem;
+    width: calc(100% - 3rem); }
+    .BGplayer button.playBg .text {
+      float: left; }
+    .BGplayer button.playBg .author {
+      float: right; }
+
+/* 全站背景音樂播放開關 end */
+.main {
+  /* 網頁限制寬度並置中的容器 begin */
+  /* 網頁限制寬度並置中的容器 end */
+  /* 表頭,選單,大標 begin */
+  /* 表頭,選單,大標 end */
+  /* 網站內容段落 begin */
+  /* 網站內容段落 end */
+  /* 網站主選單 begin */
+  /* 網站主選單 end */
+  /* 網站麵包屑 begin */
+  /* 網站麵包屑 end */
+  /* 網頁內容左側欄 begin */
+  /* 網頁內容左側欄 end */
+  /* 網頁內容右側欄 begin */
+  /* 網頁內容右側欄 end */
+  /* 網頁內容元件 begin */
+  /* 網頁內容元件 end */ }
+  .main > div.wrapper {
+    width: 1000px; }
+  .main .pageTop {
+    position: relative; }
+    .main .pageTop header,
+    .main .pageTop .siteMenu {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      z-index: 1; }
+    .main .pageTop header {
+      top: 0;
+      height: 100%; }
+      .main .pageTop header .siteLogo {
+        display: inline-block;
+        margin-top: 42px;
+        margin-left: 57px; }
+    .main .pageTop .siteMenu {
+      bottom: -48px;
+      height: 52px; }
+      .main .pageTop .siteMenu ul {
+        display: block;
+        padding-top: 5px; }
+        .main .pageTop .siteMenu ul li {
+          display: inline-block;
+          padding: 0px 1.5rem; }
+      .main .pageTop .siteMenu .FBpage {
+        position: absolute;
+        bottom: -6px;
+        right: 23px;
+        width: 65px;
+        height: 65px;
+        z-index: 1; }
+      .main .pageTop .siteMenu .menuIOBtn.openMenu {
+        display: none; }
+    .main .pageTop .banner {
+      width: 100%;
+      height: auto; }
+  .main section.pageCtx {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 60px; }
+    .main section.pageCtx aside.sideOptions {
+      float: left;
+      width: 140px; }
+    .main section.pageCtx dl.contentBlock {
+      float: right;
+      width: 600px; }
+  .main nav.siteMenu li a {
+    font-size: 100%;
+    display: inline-block;
+    position: relative;
+    font-weight: bold; }
+    .main nav.siteMenu li a:hover:before {
+      position: absolute;
+      right: 0;
+      bottom: -6px;
+      width: 100%;
+      height: 6px;
+      z-index: 1;
+      content: ' '; }
+  .main nav.siteMenu .menuCover {
+    display: none; }
+  .main nav.breadCrumb {
+    margin: 65px 25px;
+    margin-bottom: 0; }
+    .main nav.breadCrumb ul {
+      display: block; }
+      .main nav.breadCrumb ul li:last-child:after {
+        display: none; }
+      .main nav.breadCrumb ul li {
+        display: inline-block;
+        max-width: 25rem; }
+        .main nav.breadCrumb ul li:after {
+          content: '/';
+          margin-left: 5px; }
+        .main nav.breadCrumb ul li a,
+        .main nav.breadCrumb ul li span {
+          font-size: 89%; }
+  .main aside.sideOptions {
+    position: relative;
+    /* 單元項目選單 begin */
+    /* 單元項目選單 end */ }
+    .main aside.sideOptions .cap {
+      height: 38px; }
+    .main aside.sideOptions h3 {
+      font-size: 1em; }
+      .main aside.sideOptions h3 span {
+        font-size: 100%;
+        display: block;
+        margin: 0 15%;
+        padding-bottom: 6px; }
+    .main aside.sideOptions .contentMenu ul {
+      margin-top: 25px;
+      padding-bottom: 190px; }
+    .main aside.sideOptions .contentMenu li {
+      margin-bottom: 10px;
+      padding: 0 5px; }
+      .main aside.sideOptions .contentMenu li a,
+      .main aside.sideOptions .contentMenu li span.current {
+        font-size: 93%;
+        line-height: 1.5; }
+    .main aside.sideOptions .puppet {
+      position: absolute;
+      bottom: -98px;
+      left: -63px;
+      width: 203px;
+      height: 264px;
+      z-index: 1; }
+  .main dl.contentBlock dt.title {
+    position: relative;
+    margin-bottom: 10px;
+    line-height: 1.25; }
+    .main dl.contentBlock dt.title span {
+      font-size: 119%;
+      display: inline-block; }
+    .main dl.contentBlock dt.title span.page {
+      display: inline; }
+    .main dl.contentBlock dt.title .ink {
+      position: absolute;
+      top: -2px;
+      left: -30px;
+      width: 20px;
+      height: 20px;
+      z-index: 1; }
+    .main dl.contentBlock dt.title .mobileSideOption {
+      display: none; }
+      .main dl.contentBlock dt.title .mobileSideOption ul {
+        /* 從IE9 開始支援 */
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        /* 從IE9 開始支援 */
+        -webkit-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.35);
+        box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.35); }
+      .main dl.contentBlock dt.title .mobileSideOption .menuIOBtn:active {
+        /* 從IE9 開始支援 */
+        -webkit-box-shadow: 0px 0px 7px 4px rgba(0, 104, 183, 0.35);
+        -moz-box-shadow: 0px 0px 7px 4px rgba(0, 104, 183, 0.35);
+        box-shadow: 0px 0px 7px 4px rgba(0, 104, 183, 0.35); }
+  .main dl.contentBlock dd .posterWrapper,
+  .main dl.contentBlock dd .subsetList,
+  .main dl.contentBlock dd .thumbSubsetList,
+  .main dl.contentBlock dd .ckx {
+    margin-bottom: 25px; }
+  .main dl.contentBlock dd hr.withShadow {
+    margin: 40px 0; }
+  .main section {
+    /* 最新消息的年度消息圖框 begin */
+    /* 最新消息的年度消息圖框 end */
+    /* 年度消息分項清單 begin */
+    /* 年度消息分項清單 end */
+    /* 分頁清單 begin */
+    /* 分頁清單 end */
+    /* 圖片式分項清單 begin */
+    /* 圖片式分項清單 end */ }
+    .main section h4.dateTime {
+      margin-bottom: 5px;
+      font-size: 1em; }
+      .main section h4.dateTime time {
+        font-size: 119%; }
+    .main section h2.contentTitle {
+      font-size: 129%;
+      margin-bottom: 15px;
+      line-height: 1.5; }
+    .main section div.backPrev {
+      font-size: 100%; }
+    .main section .ckx * {
+      margin-bottom: 10px;
+      line-height: 1.25; }
+    .main section .ckx p {
+      font-size: 100%;
+      margin-bottom: 30px;
+      line-height: 1.8; }
+    .main section .ckx img {
+      margin: 3px;
+      max-width: 100%;
+      width: auto;
+      height: auto; }
+    .main section .ckx a {
+      padding: 0 2px; }
+    .main section .posterWrapper figure {
+      margin: 0;
+      padding: 0; }
+    .main section .posterWrapper .frameTop img,
+    .main section .posterWrapper .frameMiddle img,
+    .main section .posterWrapper .frameBottom img {
+      display: block;
+      width: 100%;
+      height: auto; }
+    .main section .posterWrapper .frameMiddle {
+      padding-left: 18px;
+      padding-right: 18px; }
+    .main section .subsetList h3 {
+      margin-bottom: 5px;
+      font-size: 136%;
+      line-height: 1.5; }
+    .main section .subsetList ol {
+      list-style: none; }
+      .main section .subsetList ol li a,
+      .main section .subsetList ol li span.current {
+        display: inline-block;
+        padding: 15px;
+        padding-left: 0;
+        font-size: 100%;
+        line-height: 1.5; }
+        .main section .subsetList ol li a time,
+        .main section .subsetList ol li span.current time {
+          padding-right: 10px; }
+    .main section .pageJump {
+      padding: 0 25px;
+      text-align: center; }
+      .main section .pageJump .jumps {
+        font-size: 100%;
+        padding: 3px 5px;
+        margin: 0 5px; }
+      .main section .pageJump a.jumps.toPrev,
+      .main section .pageJump a.jumps.toNext {
+        font-size: 129%; }
+    .main section .thumbSubsetList h3 {
+      font-size: 119%;
+      margin-bottom: 15px;
+      line-height: 1.5; }
+    .main section .thumbSubsetList ol,
+    .main section .thumbSubsetList ul {
+      list-style: none; }
+      .main section .thumbSubsetList ol li,
+      .main section .thumbSubsetList ul li {
+        float: left;
+        width: 170px;
+        margin-right: 45px;
+        margin-bottom: 45px; }
+        .main section .thumbSubsetList ol li:nth-child(3n),
+        .main section .thumbSubsetList ul li:nth-child(3n) {
+          margin-right: 0; }
+        .main section .thumbSubsetList ol li figure,
+        .main section .thumbSubsetList ul li figure {
+          margin: 0;
+          padding: 0;
+          transition-duration: 0.18s; }
+          .main section .thumbSubsetList ol li figure a.frame,
+          .main section .thumbSubsetList ol li figure span.frame,
+          .main section .thumbSubsetList ul li figure a.frame,
+          .main section .thumbSubsetList ul li figure span.frame {
+            display: block;
+            position: relative;
+            width: inherit;
+            height: 170px;
+            overflow: hidden; }
+            .main section .thumbSubsetList ol li figure a.frame:hover span.frameBroder,
+            .main section .thumbSubsetList ol li figure span.frame:hover span.frameBroder,
+            .main section .thumbSubsetList ul li figure a.frame:hover span.frameBroder,
+            .main section .thumbSubsetList ul li figure span.frame:hover span.frameBroder {
+              border-width: 5px;
+              transition-property: border-width;
+              transition-duration: 0.18s; }
+            .main section .thumbSubsetList ol li figure a.frame:hover span.frameBroder.video,
+            .main section .thumbSubsetList ol li figure span.frame:hover span.frameBroder.video,
+            .main section .thumbSubsetList ul li figure a.frame:hover span.frameBroder.video,
+            .main section .thumbSubsetList ul li figure span.frame:hover span.frameBroder.video {
+              background-size: 20%;
+              border-width: 1px;
+              background-position: 90% 90%;
+              transition-property: background-color , background-size , background-position;
+              transition-duration: 0.18s; }
+            .main section .thumbSubsetList ol li figure a.frame img,
+            .main section .thumbSubsetList ol li figure span.frame img,
+            .main section .thumbSubsetList ul li figure a.frame img,
+            .main section .thumbSubsetList ul li figure span.frame img {
+              opacity: 1;
+              transition-property: opacity;
+              transition-duration: 0.4s; }
+              .main section .thumbSubsetList ol li figure a.frame img.preload,
+              .main section .thumbSubsetList ol li figure span.frame img.preload,
+              .main section .thumbSubsetList ul li figure a.frame img.preload,
+              .main section .thumbSubsetList ul li figure span.frame img.preload {
+                opacity: 0; }
+          .main section .thumbSubsetList ol li figure span.frameBroder,
+          .main section .thumbSubsetList ul li figure span.frameBroder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transition-property: border-width;
+            transition-duration: 0.18s;
+            pointer-events: none; }
+          .main section .thumbSubsetList ol li figure span.frameBroder.video,
+          .main section .thumbSubsetList ul li figure span.frameBroder.video {
+            background-size: 60%;
+            background-position: center center;
+            transition-property: background-color , background-size , background-position; }
+          .main section .thumbSubsetList ol li figure figcaption,
+          .main section .thumbSubsetList ul li figure figcaption {
+            display: block;
+            margin-top: 15px;
+            width: inherit;
+            min-height: 1rem; }
+            .main section .thumbSubsetList ol li figure figcaption a,
+            .main section .thumbSubsetList ol li figure figcaption span,
+            .main section .thumbSubsetList ul li figure figcaption a,
+            .main section .thumbSubsetList ul li figure figcaption span {
+              font-size: 93%; }
+            .main section .thumbSubsetList ol li figure figcaption span,
+            .main section .thumbSubsetList ul li figure figcaption span {
+              cursor: pointer; }
+    .main section .thumbSubsetList ul {
+      display: none; }
+    .main section hr.withShadow {
+      /* 從IE9 開始支援 */
+      -webkit-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+      opacity: 0.55; }
+  .main footer {
+    height: 80px; }
+    .main footer address {
+      line-height: 1.5; }
+    .main footer .add {
+      padding-left: 10px; }
+    .main footer .cprs {
+      display: block;
+      margin-top: 5px; }
+    .main footer .box {
+      font-size: 80%; }
+      .main footer .box .pc-ignore {
+        display: none; }

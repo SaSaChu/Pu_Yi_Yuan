@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/* Create with Gulp + SCSS on windows */
+/* ... Pu Yi Yuan 法雨山普宜苑官方網站 ... */
+/*
+@media (orientation:portrait){}
+@media (orientation:landscape){}
+*/
+@media (max-width: 767.98px) {
+  #pingForRwd p {
+    float: right; }
+  .main {
+    position: relative;
+    height: 100vh; }
+    .main .cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 2rem);
+      z-index: 1; }
+      .main .cover .ctx {
+        width: calc(100% - 1rem); }
+        .main .cover .ctx h2 {
+          font-size: 256%; } }
+      @media (max-width: 767.98px) and (orientation: landscape) {
+        .main .cover .ctx img {
+          max-width: inherit;
+          width: auto;
+          height: 20vh; } }
+
+@media (max-width: 767.98px) {
+        .main .cover .ctx p {
+          font-size: 100%; }
+    .main footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 2;
+      height: auto; }
+      .main footer:before {
+        display: none; }
+      .main footer .box {
+        display: block;
+        padding: 1rem 0.75rem; }
+        .main footer .box .phone-ignore,
+        .main footer .box .pc-ignore {
+          display: none; }
+        .main footer .box .tablet-ignore {
+          display: inline; } }
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #pingForRwd p {
+    float: right; } }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #pingForRwd p {
+    float: right; }
+  .main {
+    position: relative;
+    height: 100vh; }
+    .main .cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 3rem);
+      z-index: 1; }
+    .main footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 2;
+      height: auto; }
+      .main footer:before {
+        display: none; }
+      .main footer .box {
+        display: block;
+        padding: 1rem 0.75rem; }
+        .main footer .box .pc-ignore {
+          display: block; }
+        .main footer .box .tablet-ignore {
+          display: none; } }

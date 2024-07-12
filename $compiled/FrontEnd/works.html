@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>無標題文件</title>
+<script language="javascript" type="text/javascript">
+var files = [
+['index_for_modify.html' , '施工中-首頁' ,'2019/08/15'], 
+['index.html' , '正式-首頁' ,'2019/08/26'], 
+['about.html' , '關於普宜苑(所有內容使用同一版形)' ,'2019/08/21'], 
+['about_sample.html' , '關於普宜苑(文字內容範本)' ,'2019/09/16'], 
+['news.html' , '最新消息' ,'2019/08/22'], 
+['news_content.html' , '最新消息-內頁' ,'2019/08/22'], 
+['information.html' , '法語園地(版面類似最新消息)' ,'2019/08/22'], 
+['information_content.html' , '法語園地-內頁(版面類似最新消息-內頁)' ,'2019/08/22'], 
+['album.html' , '活動相簿(此時每張圖片為導向不同相簿的網址),<br>此單元網址結構為三層,請多加注意<br>追加圖檔URL 若為youtube 影片網址,於前端轉換為https://img.youtube.com/vi/.../0.jpg' ,'2019/08/22'], 
+['album_content.html' , '活動相簿-內頁(此時每張圖片為點小圖開大圖效果)' ,'2019/08/22'], 
+/*['ui-api-play.html' , 'UI API 示範' , '']*/
+];
+</script>
+<style type="text/css">
+<!--
+a{
+	font-size:1.25em;
+}
+-->
+</style>
+</head>
+
+<body>
+<table cellpadding="2" cellspacing="2" border="1" bordercolor="#003300" id="list"></table>
+<script language="javascript" type="text/javascript">
+var scode = 
+'<tr>' + 
+'<th>單元</th>'+
+'<th>網址</th>'+
+'<th>建立時間</th>'+
+'</tr>';
+for(var i = 0;i<files.length;i++){
+	scode += 
+'<tr>' +
+'<td>' + files[i][1] + '</td>' +  
+'<td>' + 
+'<a href="javascript:;" onclick="window.open(\'' + files[i][0] + '\' , \'cap\');" target="cap">' + files[i][0] + '</a>' + 
+'</td>' +  
+'<td>' + files[i][2] + '</td>' +  
+'</tr>';
+};
+
+document.getElementById('list').innerHTML = scode;
+</script>
+</body>
+</html>
