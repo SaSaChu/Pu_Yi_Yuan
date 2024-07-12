@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+.puppet .pepole-num-page {
+  position: absolute;
+  bottom: 5%;
+  right: 0;
+  width: 75%;
+  border-radius: 99em;
+  background-color: rgba(255, 255, 255, .85);
+  color: rgba(178, 129, 70, 1.00);
+  font-size: 14px;
+  padding: 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  line-height: initial;
+}
+
+.puppet .pepole-num-page:before {
+  display: inline-block;
+  content: attr(title);
+  font-weight: bold;
+}
+
+.puppet .pepole-num-page:after {
+  display: inline-block;
+  content: '人';
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.slickCover .pepole-num-index {
+  position: absolute;
+  bottom: 3%;
+  left: 3%;
+  width: auto;
+  border-radius: 99em;
+  background-color: rgba(255, 255, 255, .85);
+  color: rgba(178, 129, 70, 1.00);
+  font-size: 14px;
+  padding: 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  line-height: initial;
+}
+
+.slickCover .pepole-num-index:before {
+  display: inline-block;
+  content: attr(title);
+  font-weight: bold;
+}
+
+.slickCover .pepole-num-index:after {
+  display: inline-block;
+  content: '人';
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.calendar-title {
+  font-size: 19px;
+  font-weight: bold;
+  color: #b4854c;
+}
+
+.posterWrapper.calendar-space {
+  margin-top: 10px;
+}

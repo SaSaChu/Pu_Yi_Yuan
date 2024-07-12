@@ -6,14 +6,17 @@
   font-family: Arial, Helvetica, sans-serif  , STHeiti , Apple LiGothic Medium , Microsoft JhengHei, '微軟正黑體', '黑體' !important; }
 
 .fancybox-caption__body .childTitle, .fancybox-caption__body .child {
-  white-space: nowrap;
+  /*white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis; }
+  text-overflow: ellipsis; */
+}
 
 /* fancybox 複寫 begin */
 .fancybox-caption {
-  bottom: auto;
-  top: 0;
+  bottom: 0;
+  left: 0;
+  /*bottom: auto;
+  top: 0;*/
   background: none;
   pointer-events: none; }
   .fancybox-caption * {
@@ -49,8 +52,11 @@
   .fancybox-slide--image .fancybox-content {
     border: none; }
   .fancybox-caption {
-    bottom: auto;
-    top: 10%; }
+    left: 0;
+    bottom: 0; 
+    /*bottom: auto;
+    top: 10%; */
+  }
   .extendCloseFancyboxBtn {
     /* 從IE9 開始支援 */
     -webkit-border-radius: 30px;

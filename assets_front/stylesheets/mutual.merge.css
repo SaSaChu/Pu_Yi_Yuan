@@ -73,9 +73,10 @@ table {
 
 .main nav.breadCrumb ul li, .main section .thumbSubsetList ol li figure figcaption,
 .main section .thumbSubsetList ul li figure figcaption {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis; }
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 .hiddenItem {
   font-size: 1px;
@@ -485,7 +486,8 @@ select.styled:disabled {
             position: relative;
             width: inherit;
             height: 170px;
-            overflow: hidden; }
+            overflow: hidden; 
+            }
             .main section .thumbSubsetList ol li figure a.frame:hover span.frameBroder,
             .main section .thumbSubsetList ol li figure span.frame:hover span.frameBroder,
             .main section .thumbSubsetList ul li figure a.frame:hover span.frameBroder,
